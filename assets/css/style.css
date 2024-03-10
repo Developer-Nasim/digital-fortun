@@ -435,12 +435,13 @@ form.section_form ul {
 form.section_form ul li a {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 9px 15px;
   background: #f4f4f4e0;
   border-radius: 10px;
-  color: #252B21; 
+  color: #252B21;
   font-weight: 500;
   margin: 0 6px;
+  margin-top: 15px;
 }
 
 form.section_form ul li a img {
