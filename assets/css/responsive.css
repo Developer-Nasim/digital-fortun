@@ -7,6 +7,28 @@
 
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+    .hero-wrap h1 {
+        font-size: 58px; 
+        margin-bottom: 15px;
+    }
+    section.welcome > img { 
+        max-height: 200px;
+    }
+    section.price > img:first-child {
+        top: 3%;
+        left: 19%;
+        max-width: 185px;
+    }
+    .adv_item { 
+        width: 31%;
+    }
+    .adv_item img {
+        height: 200px; 
+    }
+
+
+
+
 
 
 }
