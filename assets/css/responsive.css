@@ -36,15 +36,248 @@
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .hero-wrap h1 {
+        font-size: 68px;
+    }
+    
+    section.features > img:first-child {
+        max-width: 180px;
+    }
+    
+    .section-title h2 {
+        line-height: 40px;
+    }
+    
+    section.features > img {
+        max-width: 70px;
+        top: 43%;
+    }
+    
+    section.welcome > img:first-child {
+        max-width: 180px;
+    }
+    
+    section.welcome > img {
+        max-width: 150px;
+        bottom: -120px;
+    }
+    
+    section.price > img:first-child {
+        max-width: 150px;
+        top: 2%;
+        left: 10%;
+    }
+    
+    .adv_item img {
+        height: 140px;
+    }
+    
+    .adv_item h2 {
+        font-size: 20px;
+    }
+    
+    .adv_item {
+        width: 30%;
+    }
+    
+    .adv_item:nth-child(2) {
+        top: 130px;
+    }
+    
+    section.advantage {
+        padding: 100px 0 150px 0;
+    }
+    
+    section.faq > img:first-child {
+        max-width: 160px;
+        left: -57px;
+    }
+    
+    section.faq > img:nth-child(3) {
+        max-width: 55px;
+    }
+    
+    section.faq > img:nth-child(2) {
+        max-width: 110px;
+    }
+    
+    section.contact > img {
+        max-width: 280px;
+        top: -130px;
+    }
 
 }
 
  
 /* small screen :320px. */
 @media (max-width: 767px) {
+    .header-wrap { 
+        padding: 10px; 
+    }
+    .header-area { 
+        top: 20px; 
+    }
+    input, select, textarea {
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .bar a {
+        width: 28px;
+        height: 28px; 
+        margin-right: 8px;
+    }
+    input, select {
+        height: 40px;
+    }
+    
+    form.section_form ul li a {
+        padding: 6px 10px;
+        margin: 0 4px;
+        margin-top: 14px;
+    }
+    
+    form.section_form ul li a img {
+        margin-right: 5px;
+    }
+    
+    form.section_form > img:last-child {
+        left: -20px;
+        max-width: 170px;
+        bottom: -110px;
+    }
+    .hero-wrap h1 {
+        font-size: 35px;
+    }
+    .hero-wrap p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    section.features > img:first-child {
+        max-width: 90px;
+        top: -45px;
+    }
+    section.hero { 
+        padding-top: 120px; 
+    }
+    .hero-wrap .hero-btns button {
+        margin: 0 5px;
+        padding: 7px 10px;
+    }
+    .hero-wrap .hero-btns { 
+        margin-top: 30px;
+    }
+    .hero-wrap > img { 
+        max-width: 100%;
+        width: 260px;
+        margin-bottom: -4px;
+    }
 
- 
+
+    .section-title h2 {
+        line-height: 32px;
+        font-size: 28px;
+    }
+    
+    section.features > img {
+        max-width: 70px;
+        top: 43%;
+    }
+    .welcome-wrap h2 { 
+        font-size: 28px;
+    }
+    .welcome-wrap { 
+        font-size: 16px;
+    }
+    section.welcome > img:first-child {
+        max-width: 180px;
+    }
+    
+    section.welcome > img {
+        max-width: 100px;
+        bottom: -90px;
+    }
+    
+    section.price > img:first-child {
+        max-width: 115px;
+        top: 1%;
+        left: 0%;
+    }
+    
+    .adv_item img {
+        height: 140px;
+    }
+    
+    .adv_item h2 {
+        font-size: 20px;
+    }
+    
+    .adv_item {
+        width: 100%;
+    }
+    
+    .adv_item:nth-child(2) {
+        top: 0px;
+    }
+    .priceBlk{
+        margin-bottom: 30px;
+    }
+    section.price > img { 
+        bottom: -1%; 
+        max-width: 120px;
+    }
+
+
+
+
+    section.advantage {
+        padding: 70px 0 70px 0
+    }
+    
+    section.faq > img:first-child {
+        max-width: 100px;
+        left: -40px;
+    }
+    .section-title img {
+        max-height: 90px;
+        margin-bottom: 10px;
+    }
+    section.faq > img:nth-child(3) {
+        max-width: 30px;
+    }
+    .accordion-item button.accordion-button img {
+        margin-right: 5px;
+        max-width: 21px;
+    }
+    section.faq > img:nth-child(2) {
+        max-width: 60px;
+    }
+    .accordion-item button.accordion-button{
+        font-size: 15px;
+    }
+    section.contact > img {
+        max-width: 200px;
+        top: -105px;
+    }
+    .contact-wrap .section-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .contact-info-items {
+        flex-wrap: wrap;
+    }
+    .contact-item{
+        width: 100%;
+    }
+    section.contact {
+        padding-bottom: 30px;
+    }
+
+
+
+
+
+
 }
  
 /* Large Mobile screen :480px. */
