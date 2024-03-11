@@ -1,5 +1,19 @@
 /* Big screen :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
+    .overallInfo-item{
+        width: 23%;
+        padding: 20px;
+    }
+    .overallInfo-item > img{
+        max-width: 100px;
+    }
+    table thead tr th img {
+        margin-left: 0px;
+    }
+    .overallInfo-item h2 { 
+        margin: 15px 0; 
+    }
+
 
 
 }
@@ -25,8 +39,17 @@
     .adv_item img {
         height: 200px; 
     }
-
-
+    .overallInfo-item{
+        width: 48%;
+    }
+    table thead tr th, table tbody tr td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    table thead tr th img {
+        margin-left: 0px;
+        max-height: 11px;
+    }
 
 
 
