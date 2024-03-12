@@ -9,6 +9,24 @@
 
   $('select').niceSelect();
 
+  function CopyToClipBoard() {
+    if (document.querySelectorAll('.copytext').length > 0) { 
+      let copyBtn = document.querySelector('.copytext')
+      copyBtn.addEventListener('click', () => {
+          let textArea = copyBtn.previousElementSibling 
+          textArea.select();
+        document.execCommand("copy"); 
+        window.getSelection().removeAllRanges();
+          textArea.classList.add("copied");
+        setTimeout(function () {
+          textArea.classList.remove("copied");
+        }, 200);
+      })
+    }
+  }
+  CopyToClipBoard()
+
+
   AOS.init({
     // Global settings:
     disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function

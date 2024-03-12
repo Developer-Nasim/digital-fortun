@@ -4,6 +4,7 @@
   --dark:#121212;
   --bodyFont:'Inter', sans-serif;
   --headingFont:'Inter', sans-serif;
+  --blue:#4CA456
 }
 body {
   font-family: var(--bodyFont);
@@ -1242,7 +1243,11 @@ section.dashboard > aside > button img {
   font-size: 20px;
   margin-bottom: 5px;
 }
-
+.dashboard-header-left h5 > span {
+  font-size: 65%;
+  font-weight: 500;
+  opacity: .8;
+}
 .dashboard-header-left p {
   opacity: .8;
 }
@@ -1447,6 +1452,12 @@ table thead tr th {
     background: rgba(234,180,34,10%);
     font-weight: 600;
     color: #121212b5;
+    cursor: pointer;
+}
+table thead tr th img{
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 table thead tr th:first-child{
   border-radius: 8px 0 0 8px;
@@ -1555,44 +1566,320 @@ table tbody tr td a > span {
 }
 
 
+/* Dashboard page css end && Deposit page css started */
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-contents .theme-btn,.modal .theme-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.theme-btn img {
+  margin-right: 5px;
+}
+
+.left-actions {
+  display: flex;
+  align-items: center;
+}
+
+.left-actions button.theme-btn {
+  margin-right: 15px;
+}
+
+.left-actions  p {
+  margin: 0;
+}
+
+.left-actions p span {
+  font-weight: 600;
+  color: #4CA456;
+}
+
+.table-action-btns {
+  display: flex;
+  align-items: center;
+}
+
+.table-action-btns > button {
+  margin-left: 15px;
+}
+ 
+span.status {
+  display: block;
+  color: #2E6234;
+  font-size: 13px;
+  padding: 5px 15px;
+  background: rgba(76,164,86,10%);
+  width: max-content;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+span.status.red {
+  color: #DC3545;
+  background: rgba(220, 53, 69, 10%);
+}
+
+span.status.yellow {
+  color: #FF7A00;
+  background: rgba(255, 122, 0, 10%);
+}
+
+span.status.blue {
+  color: #0085FF;
+  background: rgba(0, 133, 255, 10%);
+} 
+.table_end_actions > a {
+    margin-right: 10px;
+}
+.table_end_actions > a:last-child{
+  margin-right: 0;
+}
+.modal-content {
+  border: 2px solid #4CA456;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.modal-dialog{
+  max-width: 800px;
+}
+.fundtype {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.fundtype label {
+  margin: 0;
+  position: relative;
+}
+
+.fundtype label .nice-select {
+  float: none; 
+  margin-top: 5px;
+}
+
+.nice-select .list {
+  width: 100%;
+}
+
+.fundtype > button {
+  margin-left: 15px;
+}
+
+form.topup-contents .details {
+  padding: 0 20px;
+  padding-top: 40px;
+}
+.top_up_second {
+  text-align: center;
+}
+
+.top_up_second > h4 {
+  font-weight: 500;
+}
+
+.top_up_second > h4 > span,.top_up_second > p > span {
+  font-weight: 700;
+  color: #FF1212;
+}
+
+.tuc_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tuc_btns button.theme-btn {
+  margin: 0 10px;
+  padding: 8px 40px;
+}
+
+.top_up_qr {
+  display: block;
+  text-align: center;
+}
+
+.top_up_qr > img {
+  max-height: 350px;
+}
+
+.top_up_qr p {
+  margin: 0;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.top_up_qr p b {
+  display: block;
+}
+.message-wrap {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.message-wrap > img {
+  position: absolute;
+  max-height: 80px;
+  left: 16%;
+  top: -25px;
+}
+
+.message-wrap  h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.message-wrap button.theme-btn {
+  margin: auto;
+  margin-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.short_modal .modal-dialog {
+  max-width: 620px;
+}
+
+
+
+/* Deposit page css END and Ai Provider css started */
+
+
+
+.text-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.text-with-icon img {
+  margin-left: 5px;
+}
+
+.modal-body .nice-select {
+  margin-top: 10px;
+}
+
+.modal-body input {
+  height: 42px;
+}
+
+.connect-details {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.multiple-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.multiple-btn > button {
+  margin: 0 10px;
+} 
+
+form.connect-contents h4 {
+  text-align: center;
+  margin-bottom: 25px;
+}
 
 
 
 
 
+/* Ai Provider page css END and Referral css started */
+
+
+ 
+
+.affiliate-links {
+  border-radius: 12px;
+  box-shadow: 0px 5px 11px 0px rgba(0,0,0,3%);
+  background: #fff;
+  padding: 25px;
+}
+
+.affiliate-links h3 {
+  font-weight: 500;
+}
+
+.affiliate-links p {
+  opacity: .7;
+  margin-bottom: 20px;
+}
+
+.copythis {
+  border: 1px dashed #4CA456;
+  border-radius: 12px;
+  padding: 15px;
+  background: rgba(76,164,86,8%);
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.affiliate-links button {
+  margin: auto;
+  padding: 0;
+  line-height: 0;
+  border: none;
+  outline: none;
+  background: none;
+  margin-top: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.affiliate-links button img {
+  margin-right: 5px;
+}
+.copythis.copied {
+  background: rgba(76, 164, 86, 25%);
+}
+
+
+ 
+
+
+
+/* Referral page css END and Loyality css started */
+
+
+.price_top > div h2 {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: right;
+}
+
+.price_top > div h2 b {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4A4A50;
+}
+
+.redeem-item .price_contents > ul {
+  padding-left: 20px;
+}
+
+.redeem-item {
+  margin-top: 25px;
+}
+
+/* Deposit page css END and Ai Provider css started */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Deposit page css END and Ai Provider css started */
 
 
 
