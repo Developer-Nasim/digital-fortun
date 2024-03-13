@@ -1228,6 +1228,11 @@ section.contact > img {
 .bottom-wrap a {
   display: inline-block;
   margin: auto;
+  filter: invert(1);
+  max-width: 600px;
+}
+.contact-wrap form button.theme-btn {
+  margin: auto;
 }
 button.theme-btn,a.theme-btn,.theme-btn {
   border: none;
