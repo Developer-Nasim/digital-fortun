@@ -11,6 +11,7 @@ body {
   font-weight: 400; 
   color: var(--dark);
   font-size: 16px; 
+  background: #f7f7f8;
 }
 
   
@@ -386,6 +387,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 input,select,textarea {
+  background: #fff;
   display: block;
   width: 100%;
   border: 1px solid #959ea74d;
@@ -1189,7 +1191,7 @@ section.dashboard > aside nav ul li a img {
  
 
 section.dashboard > aside nav ul li a.active {
-  background: #fff;
+  background: #f7f7f8;
   color: #000;
 }
 section.dashboard > aside nav ul li a.active:after,section.dashboard > aside nav ul li a.active::before {
@@ -1258,6 +1260,7 @@ section.dashboard > aside > button img {
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
 .notifs {
@@ -1283,7 +1286,15 @@ section.dashboard > aside > button img {
   display: flex;
   align-items: center;
 }
-
+.avatar_infos:hover .dropdown_options {
+  opacity: 1;
+  visibility: visible;
+  top: 38px;
+  min-width: 150px;
+}
+.avatar_infos .dropdown_options li:last-child a{
+  color: red;
+} 
 .avatar_infos > img {
   width: 35px;
   margin-right: 10px;
@@ -1874,15 +1885,666 @@ form.connect-contents h4 {
   margin-top: 25px;
 }
 
-/* Deposit page css END and Ai Provider css started */
+
+
+
+/* Loyality page css END and Fortun coins css started */
+
+
+
+
+
+
+div#transfarPopup .message-wrap label {
+  margin-top: 30px;
+}
+
+div#transfarPopup .message-wrap .multiple-btn {
+  justify-content: center;
+}
+
+div#transfarPopup .message-wrap .multiple-btn button {
+  margin: 0 10px;
+}
+label.ckb {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  width: 25px;
+}
+
+label.ckb span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #0000002e;
+  border-radius: 5px;
+  transition: .3s;
+  background: #fff;
+  position: relative;
+}
+
+label.ckb input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 9;
+}
+
+label.ckb span:after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 10px;
+  border-bottom: 2px solid #4CA456;
+  border-right: 2px solid #4CA456;
+  transition: .2s;
+  opacity: 0;
+}
+
+label.ckb input[type="checkbox"]:checked ~ span:after {
+  opacity: 1;
+}
+
+
+
+
+/* Fortun coins page css END and Documents css started */
+
+
+.documents-proof-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.documents-proof-item > div {
+  width: 265px;
+  position: relative;
+  margin-right: 30px;
+  border-radius: 12px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.documents-item-add {
+  background: rgba(76,164,86,8%);
+  border: 2px dashed #4CA456;
+  text-align: center;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.documents-proof-item > div input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+}
+
+.documents-item-add label {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.documents-item-add label img {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  max-height: 50px;
+}
+
+.documents-item-add label p {
+  margin: 0;
+}
+
+.documents-proof h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.documents-item-proof {
+  border: 1px solid #EAB422;
+  padding: 15px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(0, rgba(234,180,34,30%), rgba(234,180,34,10%));
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.documents-item-proof > img {
+  max-width: 90%;
+  max-height: 155px;
+}
+.documents-item-proof > span {
+  padding: 4px 11px;
+  background: #4CA456;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.documents-item-proof > span img {
+  margin-right: 4px;
+}
+
+.documents-item-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.documents-item-title h5 {
+  font-size: 16px;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.documents-item-title span {
+  display: block;
+  opacity: .7;
+  font-size: 15px;
+}
+
+.documents-item-title .item_option {
+  position: relative;
+}
+
+.documents-item-title .item_option button {
+  padding: 0;
+  line-height: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+ul.dropdown_options {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0px 3px 5px -1px #9d9d9db5;
+  z-index: 9;
+  min-width: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s;
+}
+
+.documents-item {
+  overflow: unset !IMPORTANT;
+}
+
+ul.dropdown_options li {
+  display: block;
+  width: 100%;
+}
+
+ul.dropdown_options li a {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-bottom: 1px solid #a1a1a13d;
+  transition: .3s;
+  font-weight: 500;
+}
+
+ul.dropdown_options li a img {
+  margin-right: 5px;
+}
+
+ul.dropdown_options li a:hover {
+  border-bottom: 1px solid #8b8b8b3d;
+  background: #e9e9e9;
+}
+
+.documents-item-title .item_option:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+/* Documents page css END and Tutorial css started */
+
+
+
+
+.all-tutorial-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.tutorial-item {
+  width: 49%;
+}
+
+.tutorial-item h5 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.tutorial-item a {
+  display: block;
+  width: 100%;
+}
+
+.tutorial-item a img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+
+/* Tutorial page css END and NoLoseGurentee css started */
+
+
+
+
+.nolosewrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.nolose-item {
+  width: 305px;
+  box-shadow: 0 20px 48px 0 rgba(76,164,86,15%);
+  border-radius: 20px;
+  padding: 25px 32px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.nolose-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0, #fff, rgba(219,237,232,100%));
+  z-index: -1;
+}
+.nolose-item:nth-child(2){
+  z-index: 3;
+  margin: 0 -20px;
+}
+.nolose-top-wrap {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nolose-top-wrap h4 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.nolose-top-wrap p {
+  opacity: .8;
+}
+
+.nolose-pricing-wrap {
+  position: relative;
+}
+
+.nolose-pricing-wrap p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7C7C86;
+  margin: 0;
+}
+
+.nolose-pricing-wrap h1 {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.nolose-pricing-wrap h1 span {
+  font-size: 50%;
+  color: #7C7C86;
+  margin-left: 5px;
+}
+
+.nolose-pricing-wrap > button {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 50px;
+  background: rgba(18,18,18,7%);
+  font-weight: 500;
+  transition: .2s;
+}
+.nolose-item:nth-child(2) button{
+  background: #EAB423;
+  color: #fff;
+}
+.nolose-reqs-wrap {
+  margin-top: 25px;
+}
+
+.nolose-reqs-wrap h5 {
+  font-size: 16px;
+}
+
+.nolose-reqs-wrap ul li {
+  display: flex;
+  align-items: baseline;
+  font-size: 14px;
+  margin-top: 7px;
+  opacity: .8;
+}
+
+.nolose-reqs-wrap ul li img {
+  margin-right: 5px;
+}
+
+div#congrates .modal-body {
+  min-height: 281px;
+}
+
+.message-wrap .fundtype label {
+  width: 75%;
+}
+
+
+
+
+
+/* NoLoseGurentee page css END and Profile page css started */
+
+
+ 
+.profile-contents-wrap > ul {max-width: max-content;background: rgba(0,0,0,5%);padding: 5px;border-radius: 14px;margin-bottom: 30px;}
+
+.profile-contents-wrap > ul button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: transparent;
+    font-weight: 500;
+}
+
+.profile-contents-wrap > ul button.active {
+    background: #fff;
+}
+
+.the_infos,.change_pass {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.the_infos {
+    margin-bottom: 25px;
+}
+ 
+
+.two_inp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.two_inp > div,.two_inp > label {
+    width: 49%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profile-infos h4 {
+    margin-bottom: 20px;
+}
+
+.profile-infos label input {
+    height: 42px;
+    padding-left: 37px;
+    background: #fff;
+}
+
+.the_infos .with_icon img.inp_icons {
+    left: 15px;
+    bottom: 13px;
+}
+ 
+input:disabled  {
+    background: #dbdbdb !important;
+}
+.the_infos button.theme-btn {
+  margin-left: auto;
+  margin-top: 25px;
+}
+.profile_cart {
+  background: #fff;
+  border-radius: 14px;
+  padding: 25px 21px;
+  text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+}
+
+.profile_cart h3 {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_cart h3 img {
+  margin-left: 5px;
+}
+
+.profile_cart h5 {
+  color: #848A9C;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.avt {
+  position: relative;
+  width: 138px;
+  height: 138px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.avt > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avt  button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FFEBD9;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  transition: .3s;
+}
+
+.avt button:hover {
+  background: #ffc490;
+}
+
+.profile_cart > label.theme-btn {
+  position: relative;
+  max-width: max-content;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #EAB422;
+  padding: 10px 30px;
+}
+
+.profile_cart > label.theme-btn input {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.guidlines {
+  padding: 20px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(135,139,153,25%);
+  background: #EFF2FD;
+  padding-bottom: 4px;
+}
+
+.guidlines p {
+  color: #4A4A50;
+}
+
+.profile_cart > p {
+  margin: 0;
+  margin-top: 20px;
+  color: rgba(18,18,18,60%);
+}
+
+.profile_cart > p b {
+  color: #121212;
+}
+
+.notif_wrap {
+  position: absolute !important;
+  right: 30px;
+  top: 30px;
+  min-width: 300px;
+  background: white;
+  z-index: 9;
+  border-radius: 5px;
+  overflow: hidden;
+  display: block !IMPORTANT;
+  box-shadow: 0px 10px 15px 1px #64646424;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s;
+}
+
+.notif_wrap h5 {
+  margin: 0;
+  padding: 10px 15px;
+  border-bottom: 2px solid #a5a5a5;
+}
+
+.notif_wrap  ul li {
+  display: block;
+  width: 100%;
+}
+
+.notif_wrap ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-bottom: 1px solid #3333;
+  transition: .3s;
+}
+
+.notif_wrap ul li a span {
+  display: block;
+  font-size: 80%;
+  opacity: .6;
+}
+
+.notif_wrap ul li a.undread:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: red;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.notif_wrap ul li a:hover {
+  background: #f1f1f1;
+}
+
+.notif_wrap > ul {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.notifs:hover .notif_wrap {
+  opacity: 1;
+  visibility: visible;
+  top: 35px;
+}
 
 
 
 
 /* Deposit page css END and Ai Provider css started */
-
-
-
 
 
 

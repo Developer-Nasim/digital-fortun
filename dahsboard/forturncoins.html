@@ -82,8 +82,8 @@
                             <div class="fortun-coins-wrap">
                                 <div class="block-title">
                                     <div class="left-actions">
-                                        <button type="button" class="theme-btn"><img src="../assets/img/dashboard/wallet.png" alt=""> Transfer</button> 
-                                        <button type="button" class="theme-btn"><img src="../assets/img/dashboard/wallet.png" alt=""> Withdraw</button> 
+                                        <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#transfarPopup"><img src="../assets/img/dashboard/wallet.png" alt=""> Transfer</button> 
+                                        <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#withdrawPopup"><img src="../assets/img/dashboard/wallet.png" alt=""> Withdraw</button> 
                                         <p>Balance: <span>12,80</span></p>
                                     </div>
                                     <div class="right-actions"> 
@@ -306,40 +306,150 @@
     <!-- Main END -->
 
  
-  
+
   <!--
      All Popups 
-    -->  
-  <!-- success popup -->
-  <div class="modal fade short_modal" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content"> 
-        <div class="modal-body">
-            <div class="message-wrap">
-                <img src="../assets/img/welcome/robot.png" alt="">
-                <h2>Congratulations!</h2>
-                <p>Kindly await an email confirmation detailing the process to claim Digital Fortune 168's Loyalty Program.</p>
-                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+    -->
+        <!-- Transfar popup -->
+        <div class="modal fade" id="transfarPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="transfarPopupLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content"> 
+                    <div class="modal-body">
+                        <form class="message-wrap">
+                            <img src="../assets/img/welcome/robot.png" alt="">
+                            <h2>Congratulations!</h2>
+                            <label for="#">
+                                Fortune Coins Amount
+                                <input type="text" name="" id="">
+                            </label>
+                            <div class="multiple-btn"> 
+                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#transfarSuccess" data-bs-dismiss="modal" aria-label="Close">Submit</button>
+                                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                            </div> 
+                        </form> 
+                    </div> 
+                </div>
             </div>
-        </div> 
-      </div>
-    </div>
-  </div>
-  <!-- success popup -->
-  <div class="modal fade short_modal" id="noteligibleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="noteligibleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content"> 
-        <div class="modal-body">
-            <div class="message-wrap">
-                <img src="../assets/img/welcome/robot.png" alt="">
-                <h2>Oops!</h2>
-                <p>Apologies, you’re not eligible to redeem your loyalty program rewards.</p>
-                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+        <!-- Transfar success popup -->
+        <div class="modal fade short_modal" id="transfarSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="transfarSuccessLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content"> 
+              <div class="modal-body">
+                  <div class="message-wrap">
+                      <img src="../assets/img/welcome/robot.png" alt="">
+                      <h2>Congratulations!</h2>
+                      <p>Congratulations! Your coins will be transferred to your account and will be visible to you shortly. Thank you.</p>
+                      <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                  </div>
+              </div> 
             </div>
-        </div> 
+          </div>
+        </div>
+
+
+
+        <!-- Withdraw popup -->
+        <div class="modal fade" id="withdrawPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="withdrawPopupLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content"> 
+                    <div class="modal-body">
+                        <form class="topup-contents">
+                            <label for="#">
+                                Fund in Amount
+                                <input type="text" name="" id="">
+                            </label>
+                            <div class="fundtype">
+                                <label for="#">
+                                    USDT TYPE
+                                    <select name="" id="">
+                                        <option value="#">TRC20</option>
+                                        <option value="#">TRC20</option>
+                                        <option value="#">TRC20</option>
+                                    </select>
+                                </label>
+                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#topupSecond" data-bs-dismiss="modal" aria-label="Close">Submit</button>
+                                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                            </div>
+                            <div class="details">
+                                <p>1. <b>set your limits: </b> Start with a minimum deposit of $100 but aim no higher than $50,000 per transaction.</p>
+                                <p>2. <b>Stay unique: </b> Each deposit request creates a fresh billing info. Avoid mishaps by always using the client portal for new deposits and follow the instructions closely to ensure your funds land in the right account.</p>
+                                <p>3. <b>Precision is key: </b> Pay attention to payment details and transfer exact amounts, accounting for transaction fees. Even the smallest decimal may cause confusion and delay your order.</p>
+                                <p>4. <b>Save your proof: </b> Keep track of every deposit by saving and uploading your receipt or transfer confirmation. It helps us match your funds correctly.</p>
+                                <p>5. <b>Swift processing: </b> Deposits are typically processed within 20 minutes. If you encounter any delays, reach out to our support team for assistance.</p>
+                                <p>6. <b>Exchange with care:</b> Be aware of potential exchange rate losses due to payment errors. Take precautions to avoid any setbacks.</p>
+                                <p><b>(Important Notes)</b></p>
+                                <p>
+                                    - No third-party deposits permitted. <br>
+                                    - Stick to TRC20/ERC20 protocols to prevent loss of funds, as other methods may result in irreversible transactions for which you'll be held responsible.
+                                </p>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+
+      <!-- Withdraw second step popup -->
+      <div class="modal fade" id="topupSecond" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="topupSecondLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content"> 
+            <div class="modal-body">
+                <div class="top_up_second">
+                    <p>ORDER NUMBER: 1123-11231</p>
+                    <h4>PAYMENT AMOUNT: <span>$1000</span></h4>
+                    <p>Complete the transaction as per order within <span>11 minutes and 11 seconds</span></p>
+                    <div class="tuc_btns">
+                        <button type="button" class="theme-btn">Copy Wallet Address</button>
+                        <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#messageModal" data-bs-dismiss="modal" aria-label="Close">Done</button>
+                        <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    </div>
+                    <div class="top_up_qr">
+                        <img src="../assets/img/dashboard/qr.png" alt="">
+                        <p>
+                            <b>USDT / TRC 20</b> TCEnzYmYZBw5W4tRnveLfLUq9qyEkxykjE
+                        </p>
+                    </div>
+                </div>
+            </div> 
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+
+
+      <!-- Withdraw success popup -->
+      <div class="modal fade short_modal" id="messageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content"> 
+            <div class="modal-body">
+                <div class="message-wrap">
+                    <img src="../assets/img/welcome/robot.png" alt="">
+                    <h2>Congratulations!</h2>
+                    <p>Please allow time for your withdrawal to show in your account. If it doesn’t reflect within 24 hours, kindly message us in the ticket section and we’ll promptly address the issue. Thank you for your patience.</p>
+                    <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Export popup -->
+      <div class="modal fade short_modal" id="exportModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exportModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content"> 
+            <div class="modal-body">
+                <div class="message-wrap">
+                    <img src="../assets/img/welcome/robot.png" alt="">
+                    <h2>Export</h2>
+                    <p>The file has been exported. Kindly review your device's download folder. Thank you.</p>
+                    <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
 
     
 		<!-- JS here --> 

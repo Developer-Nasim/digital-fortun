@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Web3  Browser</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here --> 
+        <link rel="stylesheet" href="../assets/css/nice-select.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+    </head>
+    <body>
+ 
+
+
+
+    <!-- Main START -->
+    <main>
+        <section class="dashboard"> 
+            <!-- side bar -->
+            <aside>
+                <div> 
+                    <a href="./index.html" class="logo"><img src="../assets/img/logo2.png" alt=""></a>
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html"><img src="../assets/img/dashboard/icon.png" alt=""> Dashboard</a></li>
+                            <li><a href="./deposit.html"><img src="../assets/img/dashboard/icon2.png" alt=""> Deposit Wallet</a></li>
+                            <li><a href="./aivps.html"><img src="../assets/img/dashboard/icon3.png" alt=""> AI and VPS Provider</a></li>
+                            <li><a href="./managmentfee.html" class="active"><img src="../assets/img/dashboard/icon4.png" alt=""> Management Fee</a></li>
+                            <li><a href="./historyprofit.html"><img src="../assets/img/dashboard/icon5.png" alt=""> History Profit</a></li> 
+                        </ul>
+                        <ul>
+                            <li><a href="./referral.html"><img src="../assets/img/dashboard/icon7.png" alt=""> Referral Program</a></li> 
+                            <li><a href="./nolossgurentee.html"><img src="../assets/img/dashboard/icon8.png" alt=""> No Loss Guarantee</a></li> 
+                            <li><a href="./loyality.html"><img src="../assets/img/dashboard/icon9.png" alt=""> Loyalty Program</a></li> 
+                            <li><a href="./forturncoins.html"><img src="../assets/img/dashboard/icon10.png" alt=""> Fortune Coins</a></li>  
+                        </ul>
+                        <ul>
+                            <li><a href="./documents.html"><img src="../assets/img/dashboard/icon11.png" alt=""> Documents</a></li> 
+                            <li><a href="./tickets.html"><img src="../assets/img/dashboard/icon12.png" alt=""> Tickets</a></li> 
+                            <li><a href="./tutorial.html"><img src="../assets/img/dashboard/icon13.png" alt=""> Tutorial</a></li> 
+                        </ul>
+                    </nav>
+                </div>
+                <button type="button"><img src="../assets/img/dashboard/logout.png" alt=""> Log Out</button>
+            </aside>
+            <!-- Contents -->
+            <div class="dashboard-contents">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- Header -->
+                        <div class="col-lg-12">
+                            <div class="dashboard-header">
+                                <div class="dashboard-header-left">
+                                    <h5>Management Fee</h5>
+                                    <p>Showing the complete incoming wallet history</p>
+                                </div>
+                                <div class="dashboard-header-right">
+                                    <div>
+                                        <div class="notifs">
+                                            <button type="button"><img src="../assets/img/dashboard/notif.png" alt=""></button>
+                                        </div>
+                                        <div class="avatar_infos">
+                                            <img src="../assets/img/dashboard/avatar.png" alt="">
+                                            <p>John Doe <img src="../assets/img/dashboard/down.png" alt=""></p>
+                                            
+                                            <ul class="dropdown_options">
+                                                <li><a href="./profile.html">Profile</a></li>
+                                                <li><a href="#">Settings</a></li>
+                                                <li><a href="#">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+
+                        <!-- transaction history -->
+                        <div class="col-lg-12">
+                            <div class="transaction-histories">
+                                <div class="block-title">
+                                    <div class="left-actions">
+                                        <button type="button" class="theme-btn"><img src="../assets/img/dashboard/wallet.png" alt=""> Top Up</button> 
+                                        <p>Balance: <span>12,80</span></p>
+                                    </div>
+                                    <div class="right-actions">
+                                        <div class="table-selects">
+                                            <span>Sort by:</span>
+                                            <select>
+                                                <option value="Most Recent">Approved</option>
+                                                <option value="Most Relevant">Rejected</option>
+                                            </select>
+                                        </div>
+                                        <div class="table-search">
+                                            <label for="#" class="search_input">
+                                                <img src="../assets/img/dashboard/search.png" alt="">
+                                                <input type="text" placeholder="Search" name="" id="" data-bs-toggle="modal" data-bs-target="#invalidModal">
+                                            </label>
+                                        </div>
+                                        <div class="table-action-btns">
+                                            <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#exportModal"><img src="../assets/img/dashboard/download.png" alt="">Export</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="data-tables">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>No <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Date <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Trading Account <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Profit / Month <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Management Fee <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Amount <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Status Payment <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Action <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status">Paid</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status red">UNPAID</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status">Paid</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status">Paid</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status">Paid</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status">Paid</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status">Paid</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status">Paid</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>09 Nov, 2023</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>USDT TRC20</td>
+                                                <td>$76.09</td>
+                                                <td><span class="status">Paid</span></td> 
+                                                <td><a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="table_footers">
+                                        <p>Showing 1 - 10 of 40</p>
+                                        <ul>
+                                            <li><button type="button" class="disabled"><</button></li>
+                                            <li><a href="#" class="active">1</a></li> 
+                                            <li><a href="#">2</a></li> 
+                                            <li><a href="#">3</a></li> 
+                                            <li><a href="#">4</a></li> 
+                                            <li><button type="button">></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                        
+                        <!-- section footer -->
+                        <div class="col-lg-12">
+                            <div class="contents-footer">
+                                <p><b>© Digital Fortune 168</b> | Endless Possibilities</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main END -->
+
+
+
+  <!-- Export popup -->
+  <div class="modal fade short_modal" id="exportModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <img src="../assets/img/welcome/robot.png" alt="">
+                <h2>Export</h2>
+                <p>The file has been exported. Kindly review your device's download folder. Thank you.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- Invalit popup -->
+  <div class="modal fade short_modal" id="invalidModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="invalidModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <img src="../assets/img/welcome/robot.png" alt="">
+                <h2>Invalid</h2>
+                <p>Oops! Invalid data, try again or check your input. Thanks!</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+
+    
+		<!-- JS here --> 
+        <script src="../assets/js/jquery-3.4.1.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script> 
+        <script src="../assets/js/jquery.nice-select.min.js"></script>  
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,487 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Web3  Browser</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here --> 
+        <link rel="stylesheet" href="../assets/css/nice-select.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+    </head>
+    <body>
+ 
+
+
+
+    <!-- Main START -->
+    <main>
+        <section class="dashboard"> 
+            <!-- side bar -->
+            <aside>
+                <div> 
+                    <a href="./index.html" class="logo"><img src="../assets/img/logo2.png" alt=""></a>
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html"><img src="../assets/img/dashboard/icon.png" alt=""> Dashboard</a></li>
+                            <li><a href="./deposit.html"><img src="../assets/img/dashboard/icon2.png" alt=""> Deposit Wallet</a></li>
+                            <li><a href="./aivps.html"><img src="../assets/img/dashboard/icon3.png" alt=""> AI and VPS Provider</a></li>
+                            <li><a href="./managmentfee.html"><img src="../assets/img/dashboard/icon4.png" alt=""> Management Fee</a></li>
+                            <li><a href="./historyprofit.html"><img src="../assets/img/dashboard/icon5.png" alt=""> History Profit</a></li>
+                            <li><a href="./premiumvip.html"><img src="../assets/img/dashboard/icon6.png" alt=""> Premium VIP Perks</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./referral.html"><img src="../assets/img/dashboard/icon7.png" alt=""> Referral Program</a></li> 
+                            <li><a href="./nolossgurentee.html"><img src="../assets/img/dashboard/icon8.png" alt=""> No Loss Guarantee</a></li> 
+                            <li><a href="./loyality.html"><img src="../assets/img/dashboard/icon9.png" alt=""> Loyalty Program</a></li> 
+                            <li><a href="./forturncoins.html"><img src="../assets/img/dashboard/icon10.png" alt=""> Fortune Coins</a></li>  
+                        </ul>
+                        <ul>
+                            <li><a href="./documents.html"><img src="../assets/img/dashboard/icon11.png" alt=""> Documents</a></li> 
+                            <li><a href="./tickets.html"><img src="../assets/img/dashboard/icon12.png" alt=""> Tickets</a></li> 
+                            <li><a href="./tutorial.html"><img src="../assets/img/dashboard/icon13.png" alt=""> Tutorial</a></li> 
+                        </ul>
+                    </nav>
+                </div>
+                <button type="button"><img src="../assets/img/dashboard/logout.png" alt=""> Log Out</button>
+            </aside>
+            <!-- Contents -->
+            <div class="dashboard-contents">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- Header -->
+                        <div class="col-lg-12">
+                            <div class="dashboard-header">
+                                <div class="dashboard-header-left">
+                                    <h5>Personal Profile </h5> 
+                                </div>
+                                <div class="dashboard-header-right">
+                                    <div>
+                                        <div class="notifs">
+                                            <button type="button"><img src="../assets/img/dashboard/notif.png" alt=""></button>
+                                        </div>
+                                        <div class="avatar_infos">
+                                            <img src="../assets/img/dashboard/avatar.png" alt="">
+                                            <p>John Doe <img src="../assets/img/dashboard/down.png" alt=""></p>
+                                            
+                                            <ul class="dropdown_options">
+                                                <li><a href="#">Profile</a></li>
+                                                <li><a href="#">Settings</a></li>
+                                                <li><a href="#">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- profile contents -->
+                        <div class="col-lg-12">
+                            <div class="profile-contents-wrap">
+                                <ul class="nav" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Profile Settings</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Payment (Network)</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Trading Accounts</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="profile-infos">
+                                                    <div class="the_infos"> 
+                                                        <h4>Personal Information</h4>
+                                                        <div class="two_inp">
+                                                            <label for="#">
+                                                                First Name
+                                                                <div class="with_icon">
+                                                                    <img class="inp_icons" src="../assets/img/dashboard/user.png" alt="">
+                                                                    <input type="text" value="John">
+                                                                </div>
+                                                            </label>
+                                                            <label for="#">
+                                                                Last Name
+                                                                <div class="with_icon">
+                                                                    <img class="inp_icons" src="../assets/img/dashboard/user.png" alt="">
+                                                                    <input type="text" value="Doe">
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="two_inp">
+                                                            <label for="#">
+                                                                Username
+                                                                <div class="with_icon">
+                                                                    <img class="inp_icons" src="../assets/img/dashboard/user.png" alt="">
+                                                                    <input type="text" value="john.doe123">
+                                                                </div>
+                                                            </label>
+                                                            <label for="#">
+                                                                Phone Number
+                                                                <div class="with_icon">
+                                                                    <img class="inp_icons" src="../assets/img/dashboard/phone.png" alt="">
+                                                                    <input type="text" value="+1234567890">
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="two_inp">
+                                                            <label for="#">
+                                                                Email Address
+                                                                <div class="with_icon">
+                                                                    <img class="inp_icons" src="../assets/img/dashboard/mail.png" alt="">
+                                                                    <input type="text" value="johndoe123@gmail.com">
+                                                                </div>
+                                                            </label>
+                                                            <label for="#">
+                                                                Join Date
+                                                                <div class="with_icon">
+                                                                    <img class="inp_icons" src="../assets/img/dashboard/calendar.png" alt="">
+                                                                    <input type="text" value="29 September 2019" disabled>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <label for="#">
+                                                            Home Address
+                                                            <div class="with_icon">
+                                                                <img class="inp_icons" src="../assets/img/dashboard/map.png" alt="">
+                                                                <input type="text" placeholder="Search">
+                                                            </div>
+                                                        </label>
+                                                        <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#profileUpdate">Save Changes</button>
+                                                    </div>
+                                                    <div class="change_pass"> 
+                                                        <h4>Change Password</h4>
+                                                        <div class="two_inp">
+                                                            <label for="#">
+                                                                Old Password
+                                                                <input type="password" >
+                                                            </label>
+                                                            <label for="#">
+                                                                New Password
+                                                                <input type="password" >
+                                                            </label>
+                                                        </div>
+                                                        <div class="two_inp">
+                                                            <label for="#" style="margin: 0;display: flex;align-items: center;justify-content: center;">
+                                                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#changePass">Save Changes</button>
+                                                            </label>
+                                                            <label for="#">
+                                                                Confirm Password
+                                                                <input type="password" >
+                                                            </label>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="profile_cart">
+                                                    <h3>John Doe <img src="../assets/img/dashboard/bluetick.png" alt=""></h3>
+                                                    <h5>@john.doe123</h5>
+                                                    <div class="avt">
+                                                        <button type="button"><img src="../assets/img/dashboard/delete.png" alt=""></button>
+                                                        <img src="../assets/img/dashboard/profile.png" alt="">
+                                                    </div>
+                                                    <label for="fileUp" class="theme-btn">
+                                                        Upload New Photo
+                                                        <input type="file" id="fileUp">
+                                                    </label>
+                                                    <div class="guidlines">
+                                                        <p>Add a new picture; automatic resizing for large images.</p>
+                                                        <p>Maximum upload size is <b>1 MB</b></p>
+                                                    </div>
+                                                    <p>Member Since: <b>29 September 2019</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="row">
+                                            <!-- Payment network -->
+                                            <div class="col-lg-12">
+                                                <div class="diposit-wallet-histories">
+                                                    <div class="block-title">
+                                                        <div class="left-actions">
+                                                            <h4>Payment (Network)</h4>
+                                                        </div>
+                                                        <div class="right-actions">
+                                                            <div class="table-selects">
+                                                                <span>Sort by:</span>
+                                                                <select>
+                                                                    <option value="Most Recent">Approved</option>
+                                                                    <option value="Most Relevant">Rejected</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="table-search">
+                                                                <label for="#" class="search_input">
+                                                                    <img src="../assets/img/dashboard/search.png" alt="">
+                                                                    <input type="text" placeholder="Search" name="" id="">
+                                                                </label>
+                                                            </div>
+                                                            <div class="table-action-btns">
+                                                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#expNet"><img src="../assets/img/dashboard/download.png" alt="">Export</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="data-tables">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Date <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Crypto Network <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Name <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Crypto Address <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Country <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Status <img src="../assets/img/dashboard/arrow.png" alt=""></th> 
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>BUSD BEP20</td>
+                                                                    <td>John Doe</td>
+                                                                    <td>Strapi</td>
+                                                                    <td>Philippines</td>
+                                                                    <td><span class="status">insert</span></td> 
+                                                                </tr>  
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>BUSD BEP20</td>
+                                                                    <td>John Doe</td>
+                                                                    <td>Strapi</td>
+                                                                    <td>-</td>
+                                                                    <td><span class="status">insert</span></td> 
+                                                                </tr>  
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>BUSD BEP20</td>
+                                                                    <td>John Doe</td>
+                                                                    <td>TLyya...N1A</td>
+                                                                    <td>-</td>
+                                                                    <td><span class="status">insert</span></td> 
+                                                                </tr>  
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>BUSD BEP20</td>
+                                                                    <td>-</td>
+                                                                    <td>Strapi</td>
+                                                                    <td>Philippines</td>
+                                                                    <td><span class="status">insert</span></td> 
+                                                                </tr>  
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="table_footers">
+                                                            <p>Showing 1 - 10 of 40</p>
+                                                            <ul>
+                                                                <li><button type="button" class="disabled"><</button></li>
+                                                                <li><a href="#" class="active">1</a></li> 
+                                                                <li><a href="#">2</a></li> 
+                                                                <li><a href="#">3</a></li> 
+                                                                <li><a href="#">4</a></li> 
+                                                                <li><button type="button">></button></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                        <div class="row">
+                                            <!-- Payment network -->
+                                            <div class="col-lg-12">
+                                                <div class="diposit-wallet-histories">
+                                                    <div class="block-title">
+                                                        <div class="left-actions">
+                                                            <h4>Trading Accounts</h4>
+                                                        </div>
+                                                        <div class="right-actions">
+                                                            <div class="table-selects">
+                                                                <span>Sort by:</span>
+                                                                <select>
+                                                                    <option value="Most Recent">Approved</option>
+                                                                    <option value="Most Relevant">Rejected</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="table-search">
+                                                                <label for="#" class="search_input">
+                                                                    <img src="../assets/img/dashboard/search.png" alt="">
+                                                                    <input type="text" placeholder="Search" name="" id="">
+                                                                </label>
+                                                            </div>
+                                                            <div class="table-action-btns">
+                                                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#expNet"><img src="../assets/img/dashboard/download.png" alt="">Export</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="data-tables">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>No</th>
+                                                                    <th>Date <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>AI Provider <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Trading Account <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Trading Password  <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Brokerage Server <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                                    <th>Password <img src="../assets/img/dashboard/arrow.png" alt=""></th> 
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>Prosperity Set</td>
+                                                                    <td>12345678</td>
+                                                                    <td>abcde</td>
+                                                                    <td>TMGM</td>
+                                                                    <td><span class="status">Change</span></td> 
+                                                                </tr>   
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>Prosperity Set</td>
+                                                                    <td>12345678</td>
+                                                                    <td>abcde</td>
+                                                                    <td>TMGM</td>
+                                                                    <td><span class="status">Change</span></td> 
+                                                                </tr>   
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>Prosperity Set</td>
+                                                                    <td>12345678</td>
+                                                                    <td>abcde</td>
+                                                                    <td>TMGM</td>
+                                                                    <td><span class="status">Change</span></td> 
+                                                                </tr>   
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>Prosperity Set</td>
+                                                                    <td>12345678</td>
+                                                                    <td>abcde</td>
+                                                                    <td>TMGM</td>
+                                                                    <td><span class="status">Change</span></td> 
+                                                                </tr>   
+                                                                <tr>
+                                                                    <td>#1</td>
+                                                                    <td>09 Nov, 2023</td>
+                                                                    <td>Prosperity Set</td>
+                                                                    <td>12345678</td>
+                                                                    <td>abcde</td>
+                                                                    <td>TMGM</td>
+                                                                    <td><span class="status">Change</span></td> 
+                                                                </tr>   
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="table_footers">
+                                                            <p>Showing 1 - 10 of 40</p>
+                                                            <ul>
+                                                                <li><button type="button" class="disabled"><</button></li>
+                                                                <li><a href="#" class="active">1</a></li> 
+                                                                <li><a href="#">2</a></li> 
+                                                                <li><a href="#">3</a></li> 
+                                                                <li><a href="#">4</a></li> 
+                                                                <li><button type="button">></button></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <!-- section footer -->
+                        <div class="col-lg-12">
+                            <div class="contents-footer">
+                                <p><b>© Digital Fortune 168</b> | Endless Possibilities</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main END -->
+
+
+
+  <!-- Profile Update popup -->
+  <div class="modal fade short_modal" id="profileUpdate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="profileUpdateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <img src="../assets/img/welcome/robot.png" alt="">
+                <h2>Profile Updated</h2>
+                <p>Your profile has been modified through your edits.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- Change password Update popup -->
+  <div class="modal fade short_modal" id="changePass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="changePassLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <img src="../assets/img/welcome/robot.png" alt="">
+                <h2>Change Password</h2>
+                <p>Your password has been updated.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- Export network popup -->
+  <div class="modal fade short_modal" id="expNet" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="expNetLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <img src="../assets/img/welcome/robot.png" alt="">
+                <h2>Export</h2>
+                <p>The file has been exported. Kindly review your device's download folder. Thank you.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    
+		<!-- JS here --> 
+        <script src="../assets/js/jquery-3.4.1.min.js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script> 
+        <script src="../assets/js/jquery.nice-select.min.js"></script>  
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
