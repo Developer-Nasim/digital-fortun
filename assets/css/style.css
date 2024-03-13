@@ -553,7 +553,18 @@ section.hero {
   color: #fff;
   z-index: 2;
 }
-
+.scrol_to_top {
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  z-index: 999;
+  padding: 0;
+  line-height: 0;
+  border: none;
+  background: none;
+  outline: none;
+  max-width: 60px;
+}
 
 .hero-wrap h1 {
   font-size: 72px;
@@ -728,7 +739,147 @@ section.welcome > img:first-child {
 }
 
 
-/* Welcome section END && Price section STARTED*/
+/* Welcome section END && Methods section STARTED*/
+
+
+
+
+
+section.Methods {
+  padding: 100px 0;
+}
+
+a.playBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+  background: linear-gradient(0, #FF7A00, #FEC100);
+  padding: 6px 20px 6px 7px;
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,20%);
+}
+
+a.playBtn img {
+  margin-right: 8px;
+}
+
+.method-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.method-item {
+  width: 20%;
+  text-align: center;
+  border: 5px solid #4CA456;
+  border-radius: 50px;
+  padding: 15px;
+  margin-top: 50px;
+  position: relative;
+  background: linear-gradient(45deg, #FFE39B, #FFF9EB);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,25%);
+  z-index: 2;
+  min-height: 328px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+.method-item > div{
+  width: 100%;
+}
+
+.method-item span {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  background: #4CA456;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,25%);
+  z-index: 2;
+}
+
+.method-item > div> img {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.method-item h4 {
+  font-size: 18px;
+}
+
+.method-item p {
+  font-size: 14px;
+}
+
+.method-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  margin: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background: #4CA456;
+  color: #fff;
+  transition: .3s;
+}
+
+.method-item a img {
+  margin-right: 10px;
+}
+
+.method-item a:hover {
+  background: #22792c;
+}
+
+.method-item:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background: #4CA456;
+  top: 50%;
+  right: -55px;
+}
+
+.method-item:before {
+  content: "";
+  position: absolute;
+  border-top: 20px solid #0000;
+  border-right: 20px solid #4CA456;
+  top: 51%;
+  right: -65px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.method-item:last-child::after,
+.method-item:last-child::before{
+  display: none;
+}
+
+
+
+
+
+/* Methods section END && Price section STARTED*/
 
 
 
