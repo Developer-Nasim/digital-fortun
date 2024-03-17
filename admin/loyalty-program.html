@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Management </title>
+        <title>Loyalty Program</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="shortcut icon" type="image/x-icon" href="#">
@@ -30,7 +30,7 @@
                     <a href="./index.html" class="logo"><img src="../assets/img/logo2.png" alt=""></a>
                     <nav>
                         <ul>
-                            <li><a href="./index.html" class="active"><img src="../assets/img/dashboard/icon.png" alt=""> Dashboard</a></li>
+                            <li><a href="./index.html"><img src="../assets/img/dashboard/icon.png" alt=""> Dashboard</a></li>
                             <li><a href="./deposit.html"><img src="../assets/img/dashboard/icon2.png" alt=""> Deposit Wallet</a></li>
                             <li><a href="./aivps.html"><img src="../assets/img/dashboard/icon3.png" alt=""> AI and VPS Provider</a></li>
                             <li><a href="./managmentfee.html"><img src="../assets/img/dashboard/icon4.png" alt=""> Management Fee</a></li>
@@ -40,7 +40,7 @@
                         <ul>
                             <li><a href="./referral.html"><img src="../assets/img/dashboard/icon7.png" alt=""> Referral Program</a></li> 
                             <li><a href="./nolossgurentee.html"><img src="../assets/img/dashboard/icon8.png" alt=""> No Loss Guarantee</a></li> 
-                            <li><a href="./loyality.html"><img src="../assets/img/dashboard/icon9.png" alt=""> Loyalty Program</a></li> 
+                            <li><a href="./loyality.html" class="active"><img src="../assets/img/dashboard/icon9.png" alt=""> Loyalty Program</a></li> 
                             <li><a href="./forturncoins.html"><img src="../assets/img/dashboard/icon10.png" alt=""> Fortune Coins</a></li>  
                         </ul>
                         <ul>
@@ -140,9 +140,11 @@
                                             <p>John Doe <img src="../assets/img/dashboard/down.png" alt=""></p>
                                             
                                             <ul class="dropdown_options">
-                                                <li><a href="./profile.html">Profile</a></li>
-                                                <li><a href="#">Settings</a></li>
-                                                <li><a href="#">Logout</a></li>
+                                                <li><a href="#"><img src="../assets/img/dashboard/menu/db.png" alt=""> Backup Database</a></li>
+                                                <li><a href="#"><img src="../assets/img/dashboard/menu/lock.png" alt=""> Change Password</a></li>
+                                                <li><a href="./settings/editvideos.html"><img src="../assets/img/dashboard/menu/links.png" alt=""> Change Video Links</a></li>
+                                                <li><a href="./settings/editQr.html"><img src="../assets/img/dashboard/menu/qr-links.png" alt=""> Change QR & Link</a></li>
+                                                <li><a href="#" class="justify-content-center">Logout</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -150,11 +152,11 @@
                             </div>
                         </div>
 
-                        <!-- Management Fee -->
+                        <!-- Loyalty Program-->
                         <div class="col-lg-12">
                             <div class="transaction-histories ad_v">
                                 <div class="block-title">
-                                    <h4>Management Fee </h4>
+                                    <h4>Loyalty Program</h4>
                                     <div class="right-actions">
                                         <div class="table-selects">
                                             <select>
@@ -186,7 +188,7 @@
                                               </div>
                                         </div>
                                         <div class="table-search">
-                                            <label for="#" class="search_input">
+                                            <label for="#" class="search_input" data-bs-toggle="modal" data-bs-target="#invalid">
                                                 <img src="../assets/img/dashboard/search.png" alt="">
                                                 <input type="text" placeholder="Search" name="" id="">
                                             </label>
@@ -194,22 +196,19 @@
                                     </div>
                                 </div>
                                 <div class="transaction__options">
-                                    <label for="">
+                                    <label for="" class="w-50">
                                         <input type="text" placeholder="Clients Name">
                                     </label>
+                                    <label for="" class="w-50">
+                                        <input type="text" placeholder=" Gift">
+                                    </label>
                                     <label for="">
-                                        <input type="text" placeholder="Trading Account">
+                                        <input type="text" placeholder="Date Released">
                                     </label>
                                     <div class="table-selects">
                                         <select>
-                                            <option value="Email Sent">Email Sent</option>
-                                            <option value="Payment">Payment</option>
-                                        </select>
-                                    </div>
-                                    <div class="table-selects">
-                                        <select>
-                                            <option value="Payment">Payment</option>
-                                            <option value="Payment">Payment</option>
+                                            <option value="Received">Received</option>
+                                            <option value="Received-2">Received-2</option>
                                         </select>
                                     </div>
                                     <div class="btns">
@@ -223,12 +222,13 @@
                                         <thead>
                                             <tr>
                                                 <th>Date <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Client Name <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Trading Account <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Total Profit <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Management Fee <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Email Sent <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Payment <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Username <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Gift <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Coins Deducted <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Coin Balance <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Date Released <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>View Details <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Received? <img src="../assets/img/dashboard/arrow.png" alt=""></th>
                                                 <th>Action <img src="../assets/img/dashboard/arrow.png" alt=""></th>
                                             </tr>
                                         </thead>
@@ -239,8 +239,95 @@
                                                 <td>Prosperity Set</td>
                                                 <td>USDT TRC20</td>
                                                 <td>123abcd</td>
+                                                <td>USDT TRC20</td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
                                                 <td><span class="status">Yes</span></td>
-                                                <td><span class="status">PAID</span></td>
+                                                <td>
+                                                    <div class="action__btn">
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>09 Nov, 2023</td>
+                                                <td>Alice Eduardo</td>
+                                                <td>Prosperity Set</td>
+                                                <td>USDT TRC20</td>
+                                                <td>123abcd</td>
+                                                <td>USDT TRC20</td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status red">No</span></td>
+                                                <td>
+                                                    <div class="action__btn">
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>09 Nov, 2023</td>
+                                                <td>Alice Eduardo</td>
+                                                <td>Prosperity Set</td>
+                                                <td>USDT TRC20</td>
+                                                <td>123abcd</td>
+                                                <td>USDT TRC20</td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status">Online</span></td>
+                                                <td>
+                                                    <div class="action__btn">
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>09 Nov, 2023</td>
+                                                <td>Alice Eduardo</td>
+                                                <td>Prosperity Set</td>
+                                                <td>USDT TRC20</td>
+                                                <td>123abcd</td>
+                                                <td>USDT TRC20</td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status red">Disconnected</span></td>
+                                                <td>
+                                                    <div class="action__btn">
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>09 Nov, 2023</td>
+                                                <td>Alice Eduardo</td>
+                                                <td>Prosperity Set</td>
+                                                <td>USDT TRC20</td>
+                                                <td>123abcd</td>
+                                                <td>USDT TRC20</td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status">Online</span></td>
                                                 <td>
                                                     <div class="action__btn">
                                                         <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
@@ -248,15 +335,20 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            
+
                                             <tr>
                                                 <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
+                                                <td>Alice Eduardo</td>
+                                                <td>Prosperity Set</td>
                                                 <td>USDT TRC20</td>
+                                                <td>123abcd</td>
                                                 <td>USDT TRC20</td>
-                                                <td><span class="status red">No</span></td>
-                                                <td><span class="status red">UNPAID</span></td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status red">Disconnected</span></td>
                                                 <td>
                                                     <div class="action__btn">
                                                         <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
@@ -270,8 +362,13 @@
                                                 <td>Prosperity Set</td>
                                                 <td>USDT TRC20</td>
                                                 <td>123abcd</td>
-                                                <td><span class="status">Yes</span></td>
-                                                <td><span class="status">PAID</span></td>
+                                                <td>USDT TRC20</td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status">Online</span></td>
                                                 <td>
                                                     <div class="action__btn">
                                                         <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
@@ -279,15 +376,20 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            
+
                                             <tr>
                                                 <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
+                                                <td>Alice Eduardo</td>
+                                                <td>Prosperity Set</td>
                                                 <td>USDT TRC20</td>
+                                                <td>123abcd</td>
                                                 <td>USDT TRC20</td>
-                                                <td><span class="status red">No</span></td>
-                                                <td><span class="status red">UNPAID</span></td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status red">Disconnected</span></td>
                                                 <td>
                                                     <div class="action__btn">
                                                         <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
@@ -301,8 +403,13 @@
                                                 <td>Prosperity Set</td>
                                                 <td>USDT TRC20</td>
                                                 <td>123abcd</td>
-                                                <td><span class="status">Yes</span></td>
-                                                <td><span class="status">PAID</span></td>
+                                                <td>USDT TRC20</td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status">Online</span></td>
                                                 <td>
                                                     <div class="action__btn">
                                                         <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
@@ -310,30 +417,20 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td>USDT TRC20</td>
-                                                <td>USDT TRC20</td>
-                                                <td><span class="status red">No</span></td>
-                                                <td><span class="status red">UNPAID</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+
                                             <tr>
                                                 <td>09 Nov, 2023</td>
                                                 <td>Alice Eduardo</td>
                                                 <td>Prosperity Set</td>
                                                 <td>USDT TRC20</td>
                                                 <td>123abcd</td>
-                                                <td><span class="status">Yes</span></td>
-                                                <td><span class="status">PAID</span></td>
+                                                <td>USDT TRC20</td>
+                                                <td>
+                                                    <div class="table_end_actions">
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Now</span></a>
+                                                    </div>
+                                                </td>
+                                                <td><span class="status red">Disconnected</span></td>
                                                 <td>
                                                     <div class="action__btn">
                                                         <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
@@ -341,53 +438,8 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td>USDT TRC20</td>
-                                                <td>USDT TRC20</td>
-                                                <td><span class="status red">No</span></td>
-                                                <td><span class="status red">UNPAID</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Alice Eduardo</td>
-                                                <td>Prosperity Set</td>
-                                                <td>USDT TRC20</td>
-                                                <td>123abcd</td>
-                                                <td><span class="status">Yes</span></td>
-                                                <td><span class="status">PAID</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td>USDT TRC20</td>
-                                                <td>USDT TRC20</td>
-                                                <td><span class="status red">No</span></td>
-                                                <td><span class="status red">UNPAID</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                           
+
                                             <tr class="empty">
                                                 <td></td>
                                                 <td></td>
@@ -398,9 +450,11 @@
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
+                                                <td></td>
                                             </tr>
                                             
                                             <tr class="empty">
+                                                <td></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
@@ -444,6 +498,79 @@
     <!-- Main END -->
 
 
+  <!-- Trx Details popup -->
+  <div class="modal fade short_modal" id="trxDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="trxDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <form action="#">
+                    <h4>Uploaded Payment</h4>
+                    <ul class="uploaded_item mt-5 mb-3">
+                        <li>
+                            <img src="../assets/img/dashboard/itemproof.png" alt=""> 
+                        </li>
+                        <li>
+                            <img src="../assets/img/dashboard/itemproof.png" alt=""> 
+                        </li>
+                    </ul>
+                    <label for="#"> 
+                        TXID No.
+                        <input type="text" value="2342324" readonly>
+                    </label>
+                </form>
+                <div class="multiple-btn"> 
+                    <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- Success popup -->
+  <div class="modal fade short_modal" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Success</h2>
+                <p>Editing completed, thank you.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+ 
+  <!-- denied popup -->
+  <div class="modal fade short_modal" id="deniedModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deniedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Access Denied</h2>
+                <p>Restricted access, kindly reach out to the Superadmin.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <!-- invalid popup -->
+  <div class="modal fade short_modal" id="invalid" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="invalidLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Invalid</h2>
+                <p>Please attempt once more or supply a valid input.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
 
 
     

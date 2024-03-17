@@ -26,6 +26,15 @@
   }
   CopyToClipBoard()
 
+  function Switching() {
+    var slider = $("#range"),
+    output = $("#output"); 
+    output.text(slider.val());
+    slider.on("input", function() {
+      output.text(slider.val());
+    });
+  }
+  Switching() 
 
   AOS.init({
     // Global settings:

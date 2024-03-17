@@ -257,10 +257,7 @@
                                                         <button type="button"><img src="../assets/img/dashboard/delete.png" alt=""></button>
                                                         <img src="../assets/img/dashboard/profile.png" alt="">
                                                     </div>
-                                                    <label for="fileUp" class="theme-btn">
-                                                        Upload New Photo
-                                                        <input type="file" id="fileUp">
-                                                    </label>
+                                                    <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#uploadPhoto">Upload New Photo</button> 
                                                     <div class="guidlines">
                                                         <p>Add a new picture; automatic resizing for large images.</p>
                                                         <p>Maximum upload size is <b>1 MB</b></p>
@@ -283,8 +280,8 @@
                                                             <div class="table-selects">
                                                                 <span>Sort by:</span>
                                                                 <select>
-                                                                    <option value="Most Recent">Approved</option>
-                                                                    <option value="Most Relevant">Rejected</option>
+                                                                    <option value="Most Recent">Recent</option>
+                                                                    <option value="Most Relevant">Relavent</option>
                                                                 </select>
                                                             </div>
                                                             <div class="table-search">
@@ -294,6 +291,7 @@
                                                                 </label>
                                                             </div>
                                                             <div class="table-action-btns">
+                                                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#AddPaymentGate">Add Payment Gateway</button>
                                                                 <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#expNet"><img src="../assets/img/dashboard/download.png" alt="">Export</button>
                                                             </div>
                                                         </div>
@@ -489,6 +487,78 @@
 
 
 
+
+
+    
+    <!-- Create Ticket popup -->
+    <div class="modal short_modal fade" id="AddPaymentGate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AddPaymentGateLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+                <div class="modal-body">
+                    <form class="topup-contents">
+                        <label for="#">
+                            Name:
+                            <input type="text" name="" placeholder="">
+                        </label>
+                        <label for="#">
+                            Network
+                            <input type="text" name="" placeholder="">
+                        </label>
+                        <label for="#">
+                            Wallet Address
+                            <textarea >
+                                
+                            </textarea>
+                        </label>
+                        <label for="#">
+                            Country
+                            <input type="text" name="" placeholder="">
+                        </label> 
+                        <div class="multiple-btn">
+                            <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#successFull" data-bs-dismiss="modal" aria-label="Close">Submit</button> 
+                            <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button> 
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div> 
+        
+  <!-- Profile Picture popup -->
+  <div class="modal fade short_modal" id="uploadPhoto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uploadPhotoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <form action="#">
+                    <label for="upnow" class="file_upload_block">
+                        <div>
+                            <img src="../assets/img/dashboard/upload.png" alt="">
+                            <h4>Upload File</h4>
+                            <p>Chose your .png, .jpg etc.</p>
+                        </div>
+                        <input type="file" id="upnow">
+                    </label>
+                    <ul class="uploaded_item">
+                        <li>
+                            <img src="../assets/img/dashboard/itemproof.png" alt="">
+                            <button type="button"><img src="../assets/img/dashboard/delete.png" alt=""></button>
+                        </li>
+                        <li>
+                            <img src="../assets/img/dashboard/itemproof.png" alt="">
+                            <button type="button"><img src="../assets/img/dashboard/delete.png" alt=""></button>
+                        </li>
+                    </ul>
+                </form>
+                <div class="multiple-btn">
+                    <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#profileUpdate" data-bs-dismiss="modal" aria-label="Close">Submit</button>
+                    <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
   <!-- Profile Update popup -->
   <div class="modal fade short_modal" id="profileUpdate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="profileUpdateLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -528,6 +598,21 @@
                 <img src="../assets/img/welcome/robot.png" alt="">
                 <h2>Export</h2>
                 <p>The file has been exported. Kindly review your device's download folder. Thank you.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- Payment-gateway Added Success fully popup -->
+  <div class="modal fade short_modal" id="successFull" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="successFullLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <img src="../assets/img/welcome/robot.png" alt="">
+                <h2>Profile Updated</h2>
+                <p>Your data in payment netwrok has been modified through your edits.</p>
                 <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
             </div>
         </div> 

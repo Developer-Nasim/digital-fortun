@@ -30,23 +30,26 @@
                     <a href="./index.html" class="logo"><img src="../assets/img/logo2.png" alt=""></a>
                     <nav>
                         <ul>
-                            <li><a href="./index.html" class="active"><img src="../assets/img/dashboard/icon.png" alt=""> Dashboard</a></li>
-                            <li><a href="./deposit.html"><img src="../assets/img/dashboard/icon2.png" alt=""> Deposit Wallet</a></li>
-                            <li><a href="./aivps.html"><img src="../assets/img/dashboard/icon3.png" alt=""> AI and VPS Provider</a></li>
-                            <li><a href="./managmentfee.html"><img src="../assets/img/dashboard/icon4.png" alt=""> Management Fee</a></li>
-                            <li><a href="./historyprofit.html"><img src="../assets/img/dashboard/icon5.png" alt=""> History Profit</a></li>
-                            <li><a href="./premiumvip.html"><img src="../assets/img/dashboard/icon6.png" alt=""> Premium VIP Perks</a></li>
+                            <li><a href="./index.html"><img src="../assets/img/dashboard/icon.png" alt=""> Dashboard</a></li>
+                            <li><a href="./invoicing.html"><img src="../assets/img/dashboard/icon14.png" alt=""> Invoicing</a></li>
+                            <li><a href="./management.html"><img src="../assets/img/dashboard/icon4.png" alt=""> Management Fee</a></li>
+                            <li><a href="./wallet-history.html"><img src="../assets/img/dashboard/icon2.png" alt=""> Deposit Wallet</a></li>
+                            <li><a href="./ai-vps-provider.html"><img src="../assets/img/dashboard/icon3.png" alt=""> AI and VPS Provider</a></li> 
                         </ul>
                         <ul>
-                            <li><a href="./referral.html"><img src="../assets/img/dashboard/icon7.png" alt=""> Referral Program</a></li> 
-                            <li><a href="./nolossgurentee.html"><img src="../assets/img/dashboard/icon8.png" alt=""> No Loss Guarantee</a></li> 
-                            <li><a href="./loyality.html"><img src="../assets/img/dashboard/icon9.png" alt=""> Loyalty Program</a></li> 
-                            <li><a href="./forturncoins.html"><img src="../assets/img/dashboard/icon10.png" alt=""> Fortune Coins</a></li>  
+                            <li><a href="./fortune-coins.html"><img src="../assets/img/dashboard/icon10.png" alt=""> Fortune Coins</a></li>  
+                            <li><a href="./referral.html" class="active"><img src="../assets/img/dashboard/icon7.png" alt=""> Referral Program</a></li> 
+                            <li><a href="./no-loss-guarantee.html"><img src="../assets/img/dashboard/icon8.png" alt=""> No Loss Guarantee</a></li> 
+                            <li><a href="./loyalty-program.html"><img src="../assets/img/dashboard/icon9.png" alt=""> Loyalty Program</a></li> 
                         </ul>
                         <ul>
+                            <li><a href="./ticket.html"><img src="../assets/img/dashboard/icon12.png" alt=""> Tickets</a></li> 
+                            <li><a href="./email.html"><img src="../assets/img/dashboard/icon17.png" alt=""> Email</a></li> 
                             <li><a href="./documents.html"><img src="../assets/img/dashboard/icon11.png" alt=""> Documents</a></li> 
-                            <li><a href="./tickets.html"><img src="../assets/img/dashboard/icon12.png" alt=""> Tickets</a></li> 
-                            <li><a href="./tutorial.html"><img src="../assets/img/dashboard/icon13.png" alt=""> Tutorial</a></li> 
+                        </ul>
+                        <ul>
+                            <li><a href="./client-profile.html"><img src="../assets/img/dashboard/icon15.png" alt=""> Client Profile</a></li> 
+                            <li><a href="./user-profile.html"><img src="../assets/img/dashboard/icon16.png" alt=""> User Profile</a></li> 
                         </ul>
                     </nav>
                 </div>
@@ -140,9 +143,11 @@
                                             <p>John Doe <img src="../assets/img/dashboard/down.png" alt=""></p>
                                             
                                             <ul class="dropdown_options">
-                                                <li><a href="./profile.html">Profile</a></li>
-                                                <li><a href="#">Settings</a></li>
-                                                <li><a href="#">Logout</a></li>
+                                                <li><a href="#"><img src="../assets/img/dashboard/menu/db.png" alt=""> Backup Database</a></li>
+                                                <li><a href="#"><img src="../assets/img/dashboard/menu/lock.png" alt=""> Change Password</a></li>
+                                                <li><a href="./settings/editvideos.html"><img src="../assets/img/dashboard/menu/links.png" alt=""> Change Video Links</a></li>
+                                                <li><a href="./settings/editQr.html"><img src="../assets/img/dashboard/menu/qr-links.png" alt=""> Change QR & Link</a></li>
+                                                <li><a href="#" class="justify-content-center">Logout</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -150,11 +155,12 @@
                             </div>
                         </div>
 
-                        <!-- Documents-->
+                        <!-- tier-->
                         <div class="col-lg-12 mb-5">
                             <div class="transaction-histories ad_v">
+                                <h2 class="mb-5">Referral Program</h2>
                                 <div class="block-title">
-                                    <h4>Documents</h4>
+                                    <h4>Tier 1: Pioneer</h4>
                                     <div class="right-actions">
                                         <div class="table-selects">
                                             <select>
@@ -185,7 +191,7 @@
                                                 </div>
                                               </div>
                                         </div>
-                                        <div class="table-search">
+                                        <div class="table-search" data-bs-toggle="modal" data-bs-target="#invalid">
                                             <label for="#" class="search_input">
                                                 <img src="../assets/img/dashboard/search.png" alt="">
                                                 <input type="text" placeholder="Search" name="" id="">
@@ -214,10 +220,11 @@
                                         <thead>
                                             <tr>
                                                 <th>Date <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Client Name <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Submitted Documents <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Attachments <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Received? <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Username <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Reffered Client <img src="../assets/img/dashboard/arrow.png" alt=""></th> 
+                                                <th>Email of Client <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Email of R.Client <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Release Bonus <img src="../assets/img/dashboard/arrow.png" alt=""></th>
                                                 <th>Action <img src="../assets/img/dashboard/arrow.png" alt=""></th>
                                             </tr>
                                         </thead>
@@ -225,68 +232,32 @@
                                             <tr>
                                                 <td>09 Nov, 2023</td>
                                                 <td>Alice Eduardo</td>
-                                                <td>Prosperity Set</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status">Approved</span></td>
+                                                <td>Prosperity Set</td> 
+                                                <td>zy@gmail.com</td>
+                                                <td>zy2@gmail.com</td> 
+                                                <td><span class="status">YES</span></td>
                                                 <td>
                                                     <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status red">Declined</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status red">Declined</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>09 Nov, 2023</td>
                                                 <td>Alice Eduardo</td>
-                                                <td>Prosperity Set</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status">Approved</span></td>
+                                                <td>Prosperity Set</td> 
+                                                <td>zy@gmail.com</td>
+                                                <td>zy2@gmail.com</td> 
+                                                <td><span class="status red"">YES</span></td>
                                                 <td>
                                                     <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status red">Declined</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                            </tr> 
+                                              
                                         </tbody>
                                     </table>
                                     
@@ -307,13 +278,12 @@
                         </div>
 
 
-                        <!-- Documents 2-->
+                        <!-- tier 2-->
                         <div class="col-lg-12">
                             <div class="transaction-histories ad_v">
                                 <div class="block-title">
-                                    <div class="d-flex gap-3     align-items-center">
-                                        <h4>Documents for Signiture</h4>
-                                        <button type="button" class="theme-btn py-1 px-4"><i><img src="../assets/img/icons/attach-2.svg" alt=""></i> Attach File</button>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <h4>Tier 2: Network Builder</h4> 
                                     </div>
                                     <div class="right-actions">
                                         
@@ -369,10 +339,11 @@
                                         <thead>
                                             <tr>
                                                 <th>Date <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Client Name <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Submitted Documents <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Attachments <img src="../assets/img/dashboard/arrow.png" alt=""></th>
-                                                <th>Received? <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Username <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Reffered Client <img src="../assets/img/dashboard/arrow.png" alt=""></th> 
+                                                <th>Email of Client <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Email of R.Client <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Release Bonus <img src="../assets/img/dashboard/arrow.png" alt=""></th>
                                                 <th>Action <img src="../assets/img/dashboard/arrow.png" alt=""></th>
                                             </tr>
                                         </thead>
@@ -380,35 +351,10 @@
                                             <tr>
                                                 <td>09 Nov, 2023</td>
                                                 <td>Alice Eduardo</td>
-                                                <td>Prosperity Set</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status">Approved</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status red">Declined</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status red">Declined</span></td>
+                                                <td>Prosperity Set</td> 
+                                                <td>zy@gmail.com</td>
+                                                <td>zy2@gmail.com</td> 
+                                                <td><span class="status">YES</span></td>
                                                 <td>
                                                     <div class="action__btn">
                                                         <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
@@ -419,29 +365,18 @@
                                             <tr>
                                                 <td>09 Nov, 2023</td>
                                                 <td>Alice Eduardo</td>
-                                                <td>Prosperity Set</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status">Approved</span></td>
+                                                <td>Prosperity Set</td> 
+                                                <td>zy@gmail.com</td>
+                                                <td>zy2@gmail.com</td> 
+                                                <td><span class="status red"">YES</span></td>
                                                 <td>
                                                     <div class="action__btn">
                                                         <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
                                                         <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>09 Nov, 2023</td>
-                                                <td>Small Laude</td>
-                                                <td>Golden Package</td>
-                                                <td><a href="#" class="Details__att"><i><img src="../assets/img/icons/attach.svg" alt=""></i> Details</a></td>
-                                                <td><span class="status red">Declined</span></td>
-                                                <td>
-                                                    <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                            </tr> 
+                                              
                                         </tbody>
                                     </table>
                                     
@@ -461,6 +396,127 @@
                             </div>
                         </div>
 
+
+                        <!-- tier 2-->
+                        <div class="col-lg-12">
+                            <div class="transaction-histories ad_v mt-5">
+                                <div class="block-title">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <h4>Tier 3: Community</h4> 
+                                    </div>
+                                    <div class="right-actions">
+                                        
+                                        <div class="Date__Range">
+                                            <label>Date Range</label>
+
+                                            
+                                            <div class="two fields">
+                                                <div class="field">
+                                                  <label>From</label>
+                                                  <div class=" calendar" id="rangestart">
+                                                    <div class=" input left icon">
+                                                      <input type="text" placeholder="MM/DD/YYYY">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="field">
+                                                  <label>To</label>
+                                                  <div class=" calendar" id="rangeend">
+                                                    <div class=" input left icon">
+                                                      <input type="text" placeholder="MM/DD/YYYY">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="table-search">
+                                            <label for="#" class="search_input">
+                                                <img src="../assets/img/dashboard/search.png" alt="">
+                                                <input type="text" placeholder="Search" name="" id="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="transaction__options">
+                                    <label for="" class="w-75">
+                                        <input type="text" placeholder="Clients Name">
+                                    </label>
+                                    <label for="" class="w-75">
+                                        <input type="text" placeholder=" Received">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" placeholder="Submitted Documents">
+                                    </label>
+                                    <div class="btns">
+                                        <a href="#"><img src="../assets/img/dashboard/Search.svg" alt=""> Filter</a>
+                                        <a href="#" style="background-color: #DC503D;">Clear </a>
+                                        <a href="#"><img src="../assets/img/dashboard/import.svg" alt=""> Export</a>
+                                    </div>
+                                </div>
+                                <div class="data-tables ">
+                                    <table class="center">
+                                        <thead>
+                                            <tr>
+                                                <th>Date <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Username <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Reffered Client <img src="../assets/img/dashboard/arrow.png" alt=""></th> 
+                                                <th>Email of Client <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Email of R.Client <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Release Bonus <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                                <th>Action <img src="../assets/img/dashboard/arrow.png" alt=""></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>09 Nov, 2023</td>
+                                                <td>Alice Eduardo</td>
+                                                <td>Prosperity Set</td> 
+                                                <td>zy@gmail.com</td>
+                                                <td>zy2@gmail.com</td> 
+                                                <td><span class="status">YES</span></td>
+                                                <td>
+                                                    <div class="action__btn">
+                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>09 Nov, 2023</td>
+                                                <td>Alice Eduardo</td>
+                                                <td>Prosperity Set</td> 
+                                                <td>zy@gmail.com</td>
+                                                <td>zy2@gmail.com</td> 
+                                                <td><span class="status red"">YES</span></td>
+                                                <td>
+                                                    <div class="action__btn">
+                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                    </div>
+                                                </td>
+                                            </tr> 
+                                              
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
+
+                                <div class="table_footers">
+                                    <p>Showing 1 - 10 of 40</p>
+                                    <ul>
+                                        <li><button type="button" class="disabled">&lt;</button></li>
+                                        <li><a href="#" class="active">1</a></li> 
+                                        <li><a href="#">2</a></li> 
+                                        <li><a href="#">3</a></li> 
+                                        <li><a href="#">4</a></li> 
+                                        <li><button type="button">&gt;</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                         <!-- footer -->
                         <div class="contents-footer">
                             <p><b>© Digital Fortune 168</b> | Endless Possibilities</p>
@@ -473,6 +529,50 @@
     </main>
     <!-- Main END -->
 
+  <!-- Success popup -->
+  <div class="modal fade short_modal" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Success</h2>
+                <p>Editing completed, thank you.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+ 
+  <!-- denied popup -->
+  <div class="modal fade short_modal" id="deniedModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deniedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Access Denied</h2>
+                <p>Restricted access, kindly reach out to the Superadmin.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+  <!-- invalid popup -->
+  <div class="modal fade short_modal" id="invalid" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="invalidLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Invalid</h2>
+                <p>Please attempt once more or supply a valid input.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
 
 
 

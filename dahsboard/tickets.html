@@ -153,7 +153,7 @@
                             <div class="fortun-coins-wrap">
                                 <div class="block-title">
                                     <div class="left-actions">
-                                        <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#TicketModal"><img src="../assets/img/dashboard/send.png" alt=""> Send a Ticket</button>  
+                                        <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#createTicket"><img src="../assets/img/dashboard/send.png" alt=""> Send a Ticket</button>  
                                     </div>
                                     <div class="right-actions"> 
                                         <div class="table-selects">
@@ -364,6 +364,50 @@
      All Popups 
     --> 
 
+        <!-- Create Ticket popup -->
+        <div class="modal short_modal fade" id="createTicket" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="createTicketLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content"> 
+                    <div class="modal-body">
+                        <form class="topup-contents">
+                            <label for="#">
+                                Date Ticket Made
+                                <input type="text" name="" placeholder="MM/DD/YYYY">
+                            </label>
+                            <label for="#">
+                                Code #
+                                <input type="text" name="" placeholder="1111111111">
+                            </label>
+                            <label for="#">
+                                Subject
+                                <textarea >
+                                    dksdhkadhkhkasjhdkasjdhjsjjsjsjsjsjsjsjsjsjsjjssjsjsjsjsjsjsjsjsjsjjsjsjsjsjsjsjsjsjsjjsjsjsjjsjssjjssjjsjsjsjsjsjsjsjsjsjsjjssjsjssj
+                                </textarea>
+                            </label>
+                            <label for="#">
+                                Priority
+                                <select name="" id="">
+                                    <option value="#">High</option>
+                                    <option value="#">Low</option> 
+                                </select>
+                            </label>
+                            <label for="#">
+                                Status : 
+                                <select name="" id="">
+                                    <option value="#">Priority</option>
+                                    <option value="#">TRC22</option> 
+                                </select>
+                            </label> 
+                            <div class="multiple-btn">
+                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#TicketModal" data-bs-dismiss="modal" aria-label="Close">Submit</button> 
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        
       <!-- Ticket Sent popup -->
       <div class="modal fade short_modal" id="TicketModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="TicketModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

@@ -30,23 +30,26 @@
                     <a href="./index.html" class="logo"><img src="../assets/img/logo2.png" alt=""></a>
                     <nav>
                         <ul>
-                            <li><a href="./index.html" class="active"><img src="../assets/img/dashboard/icon.png" alt=""> Dashboard</a></li>
-                            <li><a href="./deposit.html"><img src="../assets/img/dashboard/icon2.png" alt=""> Deposit Wallet</a></li>
-                            <li><a href="./aivps.html"><img src="../assets/img/dashboard/icon3.png" alt=""> AI and VPS Provider</a></li>
-                            <li><a href="./managmentfee.html"><img src="../assets/img/dashboard/icon4.png" alt=""> Management Fee</a></li>
-                            <li><a href="./historyprofit.html"><img src="../assets/img/dashboard/icon5.png" alt=""> History Profit</a></li>
-                            <li><a href="./premiumvip.html"><img src="../assets/img/dashboard/icon6.png" alt=""> Premium VIP Perks</a></li>
+                            <li><a href="./index.html"><img src="../assets/img/dashboard/icon.png" alt=""> Dashboard</a></li>
+                            <li><a href="./invoicing.html"><img src="../assets/img/dashboard/icon14.png" alt=""> Invoicing</a></li>
+                            <li><a href="./management.html"><img src="../assets/img/dashboard/icon4.png" alt=""> Management Fee</a></li>
+                            <li><a href="./wallet-history.html"><img src="../assets/img/dashboard/icon2.png" alt=""> Deposit Wallet</a></li>
+                            <li><a href="./ai-vps-provider.html" class="active"><img src="../assets/img/dashboard/icon3.png" alt=""> AI and VPS Provider</a></li> 
                         </ul>
                         <ul>
+                            <li><a href="./fortune-coins.html"><img src="../assets/img/dashboard/icon10.png" alt=""> Fortune Coins</a></li>  
                             <li><a href="./referral.html"><img src="../assets/img/dashboard/icon7.png" alt=""> Referral Program</a></li> 
-                            <li><a href="./nolossgurentee.html"><img src="../assets/img/dashboard/icon8.png" alt=""> No Loss Guarantee</a></li> 
-                            <li><a href="./loyality.html"><img src="../assets/img/dashboard/icon9.png" alt=""> Loyalty Program</a></li> 
-                            <li><a href="./forturncoins.html"><img src="../assets/img/dashboard/icon10.png" alt=""> Fortune Coins</a></li>  
+                            <li><a href="./no-loss-guarantee.html"><img src="../assets/img/dashboard/icon8.png" alt=""> No Loss Guarantee</a></li> 
+                            <li><a href="./loyalty-program.html"><img src="../assets/img/dashboard/icon9.png" alt=""> Loyalty Program</a></li> 
                         </ul>
                         <ul>
+                            <li><a href="./ticket.html"><img src="../assets/img/dashboard/icon12.png" alt=""> Tickets</a></li> 
+                            <li><a href="./email.html"><img src="../assets/img/dashboard/icon17.png" alt=""> Email</a></li> 
                             <li><a href="./documents.html"><img src="../assets/img/dashboard/icon11.png" alt=""> Documents</a></li> 
-                            <li><a href="./tickets.html"><img src="../assets/img/dashboard/icon12.png" alt=""> Tickets</a></li> 
-                            <li><a href="./tutorial.html"><img src="../assets/img/dashboard/icon13.png" alt=""> Tutorial</a></li> 
+                        </ul>
+                        <ul>
+                            <li><a href="./client-profile.html"><img src="../assets/img/dashboard/icon15.png" alt=""> Client Profile</a></li> 
+                            <li><a href="./user-profile.html"><img src="../assets/img/dashboard/icon16.png" alt=""> User Profile</a></li> 
                         </ul>
                     </nav>
                 </div>
@@ -140,9 +143,11 @@
                                             <p>John Doe <img src="../assets/img/dashboard/down.png" alt=""></p>
                                             
                                             <ul class="dropdown_options">
-                                                <li><a href="./profile.html">Profile</a></li>
-                                                <li><a href="#">Settings</a></li>
-                                                <li><a href="#">Logout</a></li>
+                                                <li><a href="#"><img src="../assets/img/dashboard/menu/db.png" alt=""> Backup Database</a></li>
+                                                <li><a href="#"><img src="../assets/img/dashboard/menu/lock.png" alt=""> Change Password</a></li>
+                                                <li><a href="./settings/editvideos.html"><img src="../assets/img/dashboard/menu/links.png" alt=""> Change Video Links</a></li>
+                                                <li><a href="./settings/editQr.html"><img src="../assets/img/dashboard/menu/qr-links.png" alt=""> Change QR & Link</a></li>
+                                                <li><a href="#" class="justify-content-center">Logout</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -186,7 +191,7 @@
                                               </div>
                                         </div>
                                         <div class="table-search">
-                                            <label for="#" class="search_input">
+                                            <label for="#" class="search_input" data-bs-toggle="modal" data-bs-target="#invalid">
                                                 <img src="../assets/img/dashboard/search.png" alt="">
                                                 <input type="text" placeholder="Search" name="" id="">
                                             </label>
@@ -240,8 +245,8 @@
                                                 <td><span class="status">Online</span></td>
                                                 <td>
                                                     <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -256,8 +261,8 @@
                                                 <td><span class="status red">Disconnected</span></td>
                                                 <td>
                                                     <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -271,8 +276,8 @@
                                                 <td><span class="status">Online</span></td>
                                                 <td>
                                                     <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -287,8 +292,8 @@
                                                 <td><span class="status red">Disconnected</span></td>
                                                 <td>
                                                     <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -302,8 +307,8 @@
                                                 <td><span class="status">Online</span></td>
                                                 <td>
                                                     <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -318,8 +323,8 @@
                                                 <td><span class="status red">Disconnected</span></td>
                                                 <td>
                                                     <div class="action__btn">
-                                                        <a href="#"><img src="../assets/img/pen.svg" alt=""></a>
-                                                        <a href="#"><img src="../assets/img/delet.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#successModal"><img src="../assets/img/pen.svg" alt=""></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#deniedModal"><img src="../assets/img/delet.svg" alt=""></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -414,8 +419,7 @@
                                         </tbody>
                                     </table>
                                     
-                                </div>
-
+                                </div> 
                                 <div class="table_footers">
                                     <p>Showing 1 - 10 of 40</p>
                                     <ul>
@@ -444,7 +448,50 @@
 
 
 
+  <!-- Success popup -->
+  <div class="modal fade short_modal" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Success</h2>
+                <p>Editing completed, thank you.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+ 
+  <!-- denied popup -->
+  <div class="modal fade short_modal" id="deniedModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deniedModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Access Denied</h2>
+                <p>Restricted access, kindly reach out to the Superadmin.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
 
+  <!-- invalid popup -->
+  <div class="modal fade short_modal" id="invalid" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="invalidLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap"> 
+                <h2>Invalid</h2>
+                <p>Please attempt once more or supply a valid input.</p>
+                <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
     
 		<!-- JS here --> 
         <script src="../assets/js/jquery-3.4.1.min.js"></script>

@@ -197,7 +197,7 @@
                                                 <td><span class="status">Approved</span></td>
                                                 <td>
                                                     <div class="table_end_actions">
-                                                        <a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
                                                     </div>
                                                 </td>
                                             </tr>  
@@ -209,7 +209,7 @@
                                                 <td><span class="status">Approved</span></td>
                                                 <td>
                                                     <div class="table_end_actions">
-                                                        <a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
                                                     </div>
                                                 </td>
                                             </tr>  
@@ -221,7 +221,7 @@
                                                 <td><span class="status">Approved</span></td>
                                                 <td>
                                                     <div class="table_end_actions">
-                                                        <a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
                                                     </div>
                                                 </td>
                                             </tr>  
@@ -233,7 +233,7 @@
                                                 <td><span class="status">Approved</span></td>
                                                 <td>
                                                     <div class="table_end_actions">
-                                                        <a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
                                                     </div>
                                                 </td>
                                             </tr>  
@@ -245,7 +245,7 @@
                                                 <td><span class="status">Approved</span></td>
                                                 <td>
                                                     <div class="table_end_actions">
-                                                        <a href="#"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
+                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#trxDetails"><img src="../assets/img/dashboard/eye.png" alt=""> <span>View Details</span></a>
                                                     </div>
                                                 </td>
                                             </tr>  
@@ -420,38 +420,41 @@
 
         <!-- Withdraw popup -->
         <div class="modal fade" id="withdrawPopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="withdrawPopupLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content"> 
                     <div class="modal-body">
                         <form class="topup-contents">
                             <label for="#">
-                                Fund in Amount
+                                Coins (Withdrawable Amount)
                                 <input type="text" name="" id="">
                             </label>
-                            <div class="fundtype">
-                                <label for="#">
-                                    USDT TYPE
-                                    <select name="" id="">
-                                        <option value="#">TRC20</option>
-                                        <option value="#">TRC20</option>
-                                        <option value="#">TRC20</option>
-                                    </select>
-                                </label>
-                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#topupSecond" data-bs-dismiss="modal" aria-label="Close">Submit</button>
+                            <label for="#">
+                                USDT TYPE
+                                <select name="" id="">
+                                    <option value="#">TRC20</option>
+                                    <option value="#">TRC22</option>
+                                    <option value="#">TRC23</option>
+                                </select>
+                            </label>
+                            <label for="#">
+                                Choose Payment Option
+                                <select name="" id="">
+                                    <option value="#">TRC20</option>
+                                    <option value="#">TRC22</option>
+                                    <option value="#">TRC23</option>
+                                </select>
+                            </label>
+                            <label for="#">
+                                Amount
+                                <select name="" id="">
+                                    <option value="#">TRC20</option>
+                                    <option value="#">TRC22</option>
+                                    <option value="#">TRC23</option>
+                                </select>
+                            </label>
+                            <div class="multiple-btn">
+                                <button type="button" class="theme-btn" data-bs-toggle="modal" data-bs-target="#messageModal" data-bs-dismiss="modal" aria-label="Close">Submit</button>
                                 <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                            </div>
-                            <div class="details">
-                                <p>1. <b>set your limits: </b> Start with a minimum deposit of $100 but aim no higher than $50,000 per transaction.</p>
-                                <p>2. <b>Stay unique: </b> Each deposit request creates a fresh billing info. Avoid mishaps by always using the client portal for new deposits and follow the instructions closely to ensure your funds land in the right account.</p>
-                                <p>3. <b>Precision is key: </b> Pay attention to payment details and transfer exact amounts, accounting for transaction fees. Even the smallest decimal may cause confusion and delay your order.</p>
-                                <p>4. <b>Save your proof: </b> Keep track of every deposit by saving and uploading your receipt or transfer confirmation. It helps us match your funds correctly.</p>
-                                <p>5. <b>Swift processing: </b> Deposits are typically processed within 20 minutes. If you encounter any delays, reach out to our support team for assistance.</p>
-                                <p>6. <b>Exchange with care:</b> Be aware of potential exchange rate losses due to payment errors. Take precautions to avoid any setbacks.</p>
-                                <p><b>(Important Notes)</b></p>
-                                <p>
-                                    - No third-party deposits permitted. <br>
-                                    - Stick to TRC20/ERC20 protocols to prevent loss of funds, as other methods may result in irreversible transactions for which you'll be held responsible.
-                                </p>
                             </div>
                         </form>
                     </div> 
@@ -520,6 +523,35 @@
         </div>
       </div>
 
+  <!-- Trx Details popup -->
+  <div class="modal fade short_modal" id="trxDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="trxDetailsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content"> 
+        <div class="modal-body">
+            <div class="message-wrap">
+                <form action="#">
+                    <h4>Uploaded Payment</h4>
+                    <ul class="uploaded_item mt-5 mb-3">
+                        <li>
+                            <img src="../assets/img/dashboard/itemproof.png" alt=""> 
+                        </li>
+                        <li>
+                            <img src="../assets/img/dashboard/itemproof.png" alt=""> 
+                        </li>
+                    </ul>
+                    <label for="#"> 
+                        TXID No.
+                        <input type="text" value="2342324" readonly>
+                    </label>
+                </form>
+                <div class="multiple-btn"> 
+                    <button type="button" class="theme-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+            </div>
+        </div> 
+      </div>
+    </div>
+  </div>
     
 		<!-- JS here --> 
         <script src="../assets/js/jquery-3.4.1.min.js"></script>
