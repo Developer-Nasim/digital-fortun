@@ -16,8 +16,31 @@
     .method-item{
         width: 23%;
     }
-
-
+    .price_top > img {
+        height: 50px; 
+    }
+    .tutorial-item {
+        width: 48%;
+    }
+    .chart__item span {
+        font-size: 11px;
+    }
+    
+    .ch__content h4 {
+        font-size: 18px;
+    }
+    
+    .Trading__blk .flex span {
+        font-size: 11px;
+    }
+    
+    .Trading__blk .flex h4 {
+        font-size: 18px;
+    }
+    
+    .Trading__blk .flex i img {
+        max-width: 60px;
+    }
 }
 
 
@@ -55,6 +78,103 @@
     .method-item{
         width: 23%;
     }
+
+    .affiliate-links h3{
+        font-size: 22px;
+    }
+    .redeem-item .price_top > img {
+        height: 50px; 
+    }
+
+    .redeem-item .price_contents ul li { 
+        font-size: 13px;
+    }
+    .tutorial-item {
+        width: 48%;
+    }
+    .Balance__content {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .Balance__content h5 {
+        margin-bottom: 25px;
+    }
+    
+    .Balance__content h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .Balance__content p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    
+    .Balance__content .coin {
+        max-width: 137px;
+        top: 30%;
+    }
+    .Invoicing__wrp .overallInfo-item {
+        padding: 17px 15px;
+    }
+    
+    .Ch__name h5 {
+        font-size: 14px;
+    }
+    
+    .ch__content h4 {
+        font-size: 17px;
+    }
+    
+    .ch__content i {
+        max-width: 45px;
+        margin-bottom: -7px;
+    }
+
+
+    .transaction__options{
+        flex-wrap: wrap;
+    }
+    .transaction__options label{
+        width: 100% !important;
+    }
+    label.search_input input{
+        max-width: 100%;
+    }
+    .table-search {
+        width: 100%;
+        margin: 0;
+    }
+
+    .table-selects {
+        width: 100%;
+    }
+    
+    .table-selects .nice-select {
+        width: 100%;
+    }
+    .ad_v .right-actions .table-selects .nice-select{
+        margin-bottom: 20px;
+    }
+    .tk-item > h4 { 
+        font-size: 15px;
+    }
+    .tk-bottom-wrap img {
+        max-width: 50px;
+        margin-right: 10px;
+    }
+    .ticket-items { 
+        gap: 15px; 
+    }
+
+
+
+
+
+
+
 
 
 
@@ -138,6 +258,134 @@
     }
     .method-item:nth-child(2)::after,.method-item:nth-child(2)::before{
         display: none;
+    }
+    section.dashboard > aside{
+        width: 240px;
+        padding: 25px 0px 15px 20px;
+    }
+    section.dashboard{
+        padding-left: 240px;
+    }
+    section.dashboard > aside > div > a.logo img { 
+        max-width: 190px;
+    }
+    .notifs { 
+        margin-right: 15px;
+        padding-right: 15px; 
+    }
+    .dashboard-header-right .avatar_infos{
+        width: 137px;
+    }
+    .overallInfo-item {
+        width: 47%;
+    } 
+    .price_contents ul li{
+        font-size: 12px;
+    }
+    .price_contents h2 {
+        font-size: 18px; 
+    }
+    .Date__Range {
+        margin-top: 15px;
+    }
+    .nolose-top-wrap h4 {
+        font-size: 15px;
+    }
+    
+    .nolose-top-wrap p {
+        font-size: 11px;
+    }
+    
+    .nolose-pricing-wrap p {
+        font-size: 12px;
+    }
+    
+    .nolose-pricing-wrap h1 {
+        font-size: 24px;
+    }
+    
+    .nolose-pricing-wrap > button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    
+    .nolose-item {
+        padding: 20px 25px;
+    }
+
+    .redeem-item .price_top > img {
+        height: 50px; 
+    }
+
+    .redeem-item .price_contents ul li { 
+        font-size: 13px;
+    }
+    .redeem-item .price_top > div h2 { 
+        font-size: 15px; 
+    }
+    .tutorial-item {
+        width: 100%;
+    }
+    .right-actions > div{
+        flex-wrap: wrap;
+    }
+    .Date__Range .two.fields{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .transaction__options { 
+        gap: 10px; 
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .Balance__content {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .Balance__content h5 {
+        margin-bottom: 25px;
+    }
+    
+    .Balance__content h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .Balance__content p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    
+    .Balance__content .coin {
+        max-width: 137px;
+        top: 30%;
+    }
+    .transaction__options label{
+        width: 100% !important;
+    }
+    label.search_input input{
+        max-width: 100%;
+    }
+    .table-search {
+        width: 100%;
+        margin: 0;
+    }
+
+    .table-selects {
+        width: 100%;
+    }
+    
+    .table-selects .nice-select {
+        width: 100%;
+    }
+    .ad_v .right-actions .table-selects .nice-select{
+        margin-bottom: 20px;
+    }
+    .tk-item {
+        width: 47%; 
     }
 
 }
