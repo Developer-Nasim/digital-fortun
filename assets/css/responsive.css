@@ -1,11 +1,16 @@
 /* Big screen :1200px. */
+@media (min-width: 1501px) and (max-width: 1800px) {
+    .overallInfo-item > img{
+        max-width: 68px;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1500px) {
     .overallInfo-item{
         width: 23%;
         padding: 20px;
     }
     .overallInfo-item > img{
-        max-width: 100px;
+        max-width: 48px;
     }
     table thead tr th img {
         margin-left: 0px;
@@ -41,6 +46,21 @@
     .Trading__blk .flex i img {
         max-width: 60px;
     }
+    .overallInfo-item h5{
+        padding-right: 15px;
+    }
+    .search-ticket-item button { 
+        padding: 0px 10px 5px 10px !important; 
+    }
+    .search-ticket-item{
+        padding: 18px;
+    }
+    .ticket-chatbox-opts-left button {
+        margin-right: 15px;
+    }
+
+
+
 }
 
 
@@ -52,12 +72,7 @@
     }
     section.welcome > img { 
         max-height: 200px;
-    }
-    section.price > img:first-child {
-        top: 3%;
-        left: 19%;
-        max-width: 185px;
-    }
+    } 
     .adv_item { 
         width: 31%;
     }
@@ -168,11 +183,58 @@
     .ticket-items { 
         gap: 15px; 
     }
-
-
-
-
-
+    .ticket-contents-top {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    
+    .ticket-contents-top-left h4 {
+        font-size: 16px;
+    }
+    
+    .ticket-contents-top-left > img {
+        width: 40px;
+        height: 42px;
+        margin-right: 10px;
+    }
+    
+    .ticket-contents-top-left .conn-status:before {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .ticket-chatbox-opts {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .ticket-chatbox-opts-left button {
+        max-width: 15px;
+        margin-right: 4px;
+    }
+    
+    .ticket-chatbox-opts-right {
+        gap: 5px;
+    }
+    section.dashboard > aside{
+        width: 240px;
+        padding: 25px 0px 15px 20px;
+    }
+    section.dashboard{
+        padding-left: 240px;
+    }
+    .ticket-chatbox-opts-left div:first-child {
+        border-right: 2px solid #B9BBBD;
+        margin-right: 10px;
+        padding-right: 5px;
+    }
+    .tags-input-wrapper .tag{
+        font-size: 11px;
+    }
+    .only-ticket-items {
+        height: 575px; 
+    }
 
 
 
@@ -209,12 +271,7 @@
         max-width: 150px;
         bottom: -120px;
     }
-    
-    section.price > img:first-child {
-        max-width: 150px;
-        top: 2%;
-        left: 10%;
-    }
+     
     
     .adv_item img {
         height: 140px;
@@ -387,7 +444,23 @@
     .tk-item {
         width: 47%; 
     }
+    .overallInfo-item > img {
+        max-width: 60px;
+    }
+    .ticket-contents-wrap{
+        margin-top: 30px;
+    }
+    div#pills-home > .row {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
 
+
+
+
+
+
+    
 }
 
  
@@ -479,13 +552,7 @@
         max-width: 100px;
         bottom: -90px;
     }
-    
-    section.price > img:first-child {
-        max-width: 115px;
-        top: 1%;
-        left: 0%;
-    }
-    
+     
     .adv_item img {
         height: 140px;
     }
@@ -576,7 +643,11 @@
         right: auto;
     }
 
-
+    section.price .section-title img { 
+        top: -78px;
+        left: -15px; 
+        max-width: 145px;
+    }
 
 
 
