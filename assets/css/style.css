@@ -1532,7 +1532,8 @@ section.dashboard > aside > button img {
 }
 .notifs button img {
   display: block;
-  width: 18px;
+  min-width: 18px;
+  max-width: 18px;
   height: 19px;
 }
 .avatar_infos {
