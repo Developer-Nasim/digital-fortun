@@ -1530,7 +1530,11 @@ section.dashboard > aside > button img {
   background: transparent;
   transition: .3s;
 }
-
+.notifs button img {
+  display: block;
+  width: 18px;
+  height: 19px;
+}
 .avatar_infos {
   display: flex;
   align-items: center;
