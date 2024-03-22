@@ -58,14 +58,16 @@
     .ticket-chatbox-opts-left button {
         margin-right: 15px;
     }
-
+    .ad_v .block-title .right-actions{
+        margin-top: 40px;
+    }
 
 
 }
 
 
 /* Normal screen :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .hero-wrap h1 {
         font-size: 58px; 
         margin-bottom: 15px;
