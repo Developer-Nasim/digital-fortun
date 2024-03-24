@@ -237,8 +237,9 @@
     .only-ticket-items {
         height: 575px; 
     }
-
-
+    section.dashboard > aside > div > a.logo { 
+        max-width: 200px; 
+    }
 
 
 
@@ -456,7 +457,9 @@
         flex-direction: column-reverse;
         gap: 25px;
     }
-
+    h2.info_dates { 
+        font-size: 32px;
+    }
 
 
 
@@ -649,6 +652,227 @@
         top: -78px;
         left: -15px; 
         max-width: 145px;
+    }
+    section.dashboard{
+        padding-left: 0;
+    }
+    section.dashboard > aside{
+        margin-left: -400px;
+        transition: .2s;
+    }
+    section.dashboard > aside.show_now{
+        margin-left: 0px; 
+    }
+    .overallInfo-item {
+        width: 100%; 
+    }
+    .dashboard-header {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    
+    .dashboard-header > div {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .notifs { 
+        margin-right: 15px;
+        padding-right: 15px; 
+    }
+    .dashboard-header-right button.menu_icon{
+        display: block;
+    }
+    label.search_input {
+        width: 100%;
+    }
+    
+    .table-search {
+        width: 100%;
+        margin: 0;
+    }
+    
+    label.search_input input {
+        width: 100%;
+        max-width: 100%;
+    }
+    .left-actions { 
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .tuc_btns { 
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .right-actions > div { 
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .Date__Range{
+        margin-top: 20px;
+        margin-left: 0 !important;
+    }
+    .Date__Range > label{
+        margin-bottom: 15px !important;
+    }
+    .message-wrap > img { 
+        max-height: 60px;
+        left: 0%;
+        top: -25px;
+    }
+    .message-wrap h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .affiliate-links{
+        margin-top: 30px;
+    }
+    .table_footers {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nolosewrap {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .nolose-item:nth-child(2) {
+        margin: 0;
+    }
+    .documents-proof-item {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .documents-proof-item > div {
+        width: 210px;
+        margin-right: 0px;
+    }
+    .tutorial-item{
+        width: 100%;
+    }
+    .two_inp {
+        flex-wrap: wrap;
+    }
+    
+    .two_inp label {
+        width: 100%;
+    }
+    .change_pass .two_inp:last-child{
+        flex-direction: column-reverse;
+    }
+    section.dashboard > aside > div button.menu_icon {
+        display: block;
+    }
+    .transaction__options {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .social__link ul {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .social__link ul li {
+        width: 49%;
+    }
+    .transaction__options .btns{
+        flex-wrap: wrap;
+    }
+    .Invoice__tab {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .Invoice__tab h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .Balance__content .coin {
+        max-width: 60px;
+        top: 65%;
+    }
+    
+    .Balance__content {
+        padding: 25px;
+    }
+    
+    .Balance__content h5 {
+        margin-bottom: 30px;
+    }
+    
+    .Balance__content p {
+        margin-bottom: 50px;
+    }
+    .ad_v .block-title h4 {
+        font-size: 26px;
+    }
+    .transaction__options label { 
+        width: 100% ! IMPORTANT;
+    }
+    .tk-item {
+        width: 100%; 
+    }
+    .search-ticket-item button {
+        font-size: 34px;
+        padding: 0px 10px 5px 10px !important; 
+    }
+    .ticket-contents-wrap {
+        margin-top: 20px;
+    }
+    
+    .ticket-contents-top {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .ticket-contents-top .ticket-contents-top-right {
+        width: 100%;
+    }
+    
+    .ticket-chatbox-opts {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    .ticket-chatbox-opts-left {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .ticket-chatbox-opts-left button {
+        margin-right: 10px;
+        max-width: 16px;
+    }
+    .mailheader-item {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .mailheader-item div {
+        margin: 0;
+    }
+    
+    .tags-input-wrapper {
+        flex-wrap: wrap;
+    }
+    
+    .tags-input-wrapper input {
+        border: 1px solid #d9d9d9;
+        padding: 5px;
+    }
+    .tags-input-wrapper .tag{
+        min-width: auto;
+    }
+    .Date__Range.m-0 {
+        margin-top: 20px ! IMPORTANT;
+    }
+    .table-selects {
+        width: 100% ! IMPORTANT;
     }
 
 

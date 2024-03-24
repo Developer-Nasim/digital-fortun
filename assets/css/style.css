@@ -1385,6 +1385,7 @@ section.dashboard > aside {
   flex-wrap: wrap;
   align-content: space-between;
   overflow: auto;
+  z-index: 99;
 }
 section.dashboard > aside::-webkit-scrollbar{
   width: 0;
@@ -1467,7 +1468,23 @@ section.dashboard > aside > button {
   align-items: center;
   margin-left: 15px;
 }
+section.dashboard > aside > div button.menu_icon { 
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-right: 35px;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  background: none;
+  outline: none;
+  color: red;
+  display: none;
+}
 
+section.dashboard > aside > div button.menu_icon svg {
+  width: 30px;
+  height: 30px;
+}
 section.dashboard > aside > button img {
   margin-right: 10px;
 }
@@ -1485,8 +1502,11 @@ section.dashboard > aside > button img {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+  gap: 10px;
 }
-
+.dashboard-header-right {
+  display: flex;
+}
  
 
 .dashboard-header-left h5 {
@@ -1511,6 +1531,20 @@ section.dashboard > aside > button img {
   cursor: pointer;
   position: relative;
 }
+.dashboard-header-right button.menu_icon{
+  padding: 0;
+  line-height: 0;
+  background: none;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  display: none;
+}
+.dashboard-header-right button.menu_icon svg {
+  width: 40px;
+  height: 40px;
+}
+
 
 .notifs {
   position: relative;
@@ -1519,7 +1553,7 @@ section.dashboard > aside > button img {
   border-right: 1px solid #1212122b;
 }
 
-.notifs button {
+.notifs button{
   width: 35px;
   height: 35px;
   display: flex;

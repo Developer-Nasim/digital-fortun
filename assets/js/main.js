@@ -7,6 +7,20 @@
     $('.manu-overlay').toggleClass('show');
   }); 
 
+  
+  function MobileMenu() {
+    let asides = document.querySelector('aside')
+    let btns = document.querySelectorAll('.menu_icon')
+    if (btns.length > 0) {
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          asides.classList.toggle('show_now')
+        })
+      })
+    }
+  }
+  MobileMenu()
+
   $('select').niceSelect();
 
   function CopyToClipBoard() {
@@ -35,6 +49,8 @@
     });
   }
   Switching() 
+
+
 
   AOS.init({
     // Global settings:
