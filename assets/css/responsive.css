@@ -241,6 +241,9 @@
         max-width: 200px; 
     }
 
+    .Date__Range { 
+        margin-top: 20px;
+    }
 
 
 
@@ -460,7 +463,6 @@
     h2.info_dates { 
         font-size: 32px;
     }
-
 
 
 
@@ -699,6 +701,9 @@
     .left-actions { 
         flex-wrap: wrap;
         gap: 10px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
     }
     .tuc_btns { 
         flex-wrap: wrap;
@@ -707,13 +712,14 @@
     .right-actions > div { 
         flex-wrap: wrap;
         gap: 5px;
+        margin: auto;
     }
     .Date__Range{
         margin-top: 20px;
         margin-left: 0 !important;
     }
     .Date__Range > label{
-        margin-bottom: 15px !important;
+        margin-bottom: 25px !important;
     }
     .message-wrap > img { 
         max-height: 60px;
@@ -769,6 +775,7 @@
     .transaction__options {
         flex-wrap: wrap;
         gap: 15px;
+        justify-content: center !important;
     }
     .social__link ul {
         flex-wrap: wrap;
@@ -784,8 +791,11 @@
     .Invoice__tab {
         flex-wrap: wrap;
         gap: 15px;
+        justify-content: center;
     }
-    
+    .Invoice__tab > div { 
+        justify-content: center;
+    }
     .Invoice__tab h4 {
         margin-bottom: 10px;
         font-size: 20px;
@@ -874,6 +884,38 @@
     .table-selects {
         width: 100% ! IMPORTANT;
     }
+    .notifs:hover .notif_wrap { 
+        right: -125px;
+        min-width: 250px;
+    }
+    .table-selects .nice-select {
+        width: 100%;
+    }
+    .block-title h4 { 
+        text-align: center;
+        justify-content: center;
+      }
+      .block-title { 
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Date__Range .two.fields .field {
+        width: 49%;
+    }
+    .Date__Range .field input,.Date__Range .two.fields,.Date__Range {
+        width: 100%;
+        max-width: 100%;
+    } 
+    .right-actions { 
+        justify-content: center;
+    }
+    .Balance__content .coin{
+        display: none;
+    }
+
+
+
 
 
 

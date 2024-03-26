@@ -1477,7 +1477,7 @@ section.dashboard > aside > div button.menu_icon {
   line-height: 0;
   background: none;
   outline: none;
-  color: red;
+  /* color: red; */
   display: none;
 }
 
@@ -4046,7 +4046,9 @@ input.no-style-input {
   font-weight: 600;
   width: 100%;
 }
-
+section.dashboard.invc .right-actions button{
+  margin: 0;
+}
 
 
 
